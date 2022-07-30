@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_56da6d2c292264b503680af19191a1c8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+
+</head>
+<body>
+
+            <div class="folium-map" id="map_56da6d2c292264b503680af19191a1c8" ></div>
+
+</body>
+<script>
+
+            var map_56da6d2c292264b503680af19191a1c8 = L.map(
+                "map_56da6d2c292264b503680af19191a1c8",
+                {
+                    center: [36.058039, 103.823557],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+
+
+
+
+            var tile_layer_694fc6269ddf3989b06bd0864845b7ed = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_56da6d2c292264b503680af19191a1c8);
+
+
+            var poly_line_989624cd25d952f5cd49dfd73f5b9588 = L.polyline(
+                [[36.07209899198632, 103.86633903567636], [36.0570168918967, 103.81710713271036], [36.06228270910448, 103.8366340487335], [36.06622087996119, 103.87735199173704]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56da6d2c292264b503680af19191a1c8);
+
+
+            var poly_line_8a5ecef42bd54bf88dba1dd11e431e82 = L.polyline(
+                [[36.07209899198632, 103.86633903567636], [36.0570168918967, 103.81710713271036], [36.06228270910448, 103.8366340487335], [36.06622087996119, 103.87735199173704]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_56da6d2c292264b503680af19191a1c8);
+
+
+            var marker_61995d5ae2258f96c8dc27a619b4a983 = L.marker(
+                [36.07209899198632, 103.86633903567636],
+                {}
+            ).addTo(map_56da6d2c292264b503680af19191a1c8);
+
+
+            var icon_dd538dcddbff08af5502e5b3138a5548 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_61995d5ae2258f96c8dc27a619b4a983.setIcon(icon_dd538dcddbff08af5502e5b3138a5548);
+
+
+        var popup_9fd205cef38fce7f9b44dc28bbe8bec8 = L.popup({"maxWidth": 3000});
+
+
+            var html_eaadf4ad8282e12aa9ddba7a979a9293 = $(`<div id="html_eaadf4ad8282e12aa9ddba7a979a9293" style="width: 268.0px; height: 100.0%;">                                             09:30左右到过</br>                                             兰州市城关区滩尖子花园小区外1号楼侄仁堂医药店</br>                                             </div>`)[0];
+            popup_9fd205cef38fce7f9b44dc28bbe8bec8.setContent(html_eaadf4ad8282e12aa9ddba7a979a9293);
+
+
+        marker_61995d5ae2258f96c8dc27a619b4a983.bindPopup(popup_9fd205cef38fce7f9b44dc28bbe8bec8)
+        ;
+
+
+
+
+            var marker_0d7387d119ea7fa023bd2cfb86ba9316 = L.marker(
+                [36.0570168918967, 103.81710713271036],
+                {}
+            ).addTo(map_56da6d2c292264b503680af19191a1c8);
+
+
+            var icon_5839cd04952e4b96b27b4e9f3620b9a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0d7387d119ea7fa023bd2cfb86ba9316.setIcon(icon_5839cd04952e4b96b27b4e9f3620b9a3);
+
+
+        var popup_99bef4a0f5982b823468b7e56d7aeb4b = L.popup({"maxWidth": 3000});
+
+
+            var html_838819bf57a3ec4f9c32a311ea2dfbaf = $(`<div id="html_838819bf57a3ec4f9c32a311ea2dfbaf" style="width: 312.0px; height: 100.0%;">                                             16:00左右到过</br>                                             兰州市城关区伏龙坪杨家沟弟兄商店斜对面生活物资自购点</br>                                             </div>`)[0];
+            popup_99bef4a0f5982b823468b7e56d7aeb4b.setContent(html_838819bf57a3ec4f9c32a311ea2dfbaf);
+
+
+        marker_0d7387d119ea7fa023bd2cfb86ba9316.bindPopup(popup_99bef4a0f5982b823468b7e56d7aeb4b)
+        ;
+
+
+
+
+            var marker_3b466471aaad2711d0593fa89bba5aa3 = L.marker(
+                [36.06228270910448, 103.8366340487335],
+                {}
+            ).addTo(map_56da6d2c292264b503680af19191a1c8);
+
+
+            var icon_88ac7fb428f528025579f7c6bfc79e96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3b466471aaad2711d0593fa89bba5aa3.setIcon(icon_88ac7fb428f528025579f7c6bfc79e96);
+
+
+        var popup_604bb939bfbd4e62d8fa091f1a8c8f5f = L.popup({"maxWidth": 3000});
+
+
+            var html_923e6da141567b3056f2ca9cdaab7162 = $(`<div id="html_923e6da141567b3056f2ca9cdaab7162" style="width: 144.0px; height: 100.0%;">                                             17:34左右到过</br>                                             兰州市城关区木塔巷水果店</br>                                             </div>`)[0];
+            popup_604bb939bfbd4e62d8fa091f1a8c8f5f.setContent(html_923e6da141567b3056f2ca9cdaab7162);
+
+
+        marker_3b466471aaad2711d0593fa89bba5aa3.bindPopup(popup_604bb939bfbd4e62d8fa091f1a8c8f5f)
+        ;
+
+
+
+
+            var marker_780a3aca068e949c6938ae67a55d872b = L.marker(
+                [36.06622087996119, 103.87735199173704],
+                {}
+            ).addTo(map_56da6d2c292264b503680af19191a1c8);
+
+
+            var icon_7f63dddb2886615a6c0126d3ab561d12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_780a3aca068e949c6938ae67a55d872b.setIcon(icon_7f63dddb2886615a6c0126d3ab561d12);
+
+
+        var popup_778759ef387bc8f2276a353a40584745 = L.popup({"maxWidth": 3000});
+
+
+            var html_a28762fb342c71c81419bd1143aff43d = $(`<div id="html_a28762fb342c71c81419bd1143aff43d" style="width: 156.0px; height: 100.0%;">                                             18:00-18:30左右到过</br>                                             兰州市城关区雁滩大润发超市</br>                                             </div>`)[0];
+            popup_778759ef387bc8f2276a353a40584745.setContent(html_a28762fb342c71c81419bd1143aff43d);
+
+
+        marker_780a3aca068e949c6938ae67a55d872b.bindPopup(popup_778759ef387bc8f2276a353a40584745)
+        ;
+
+
+
+
+            var poly_line_9ff9af84b7151b3640089af009ef6656 = L.polyline(
+                [[36.05304112523197, 103.91318279344408]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_56da6d2c292264b503680af19191a1c8);
+
+
+            var poly_line_45a7788fd5fae7521bf24e4a85ff70c9 = L.polyline(
+                [[36.05304112523197, 103.91318279344408]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_56da6d2c292264b503680af19191a1c8);
+
+
+            var marker_69c3efe2944d9092ea26a912c0bbd836 = L.marker(
+                [36.05304112523197, 103.91318279344408],
+                {}
+            ).addTo(map_56da6d2c292264b503680af19191a1c8);
+
+
+            var icon_eb77792a5a0361c984c73203b22b094b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_69c3efe2944d9092ea26a912c0bbd836.setIcon(icon_eb77792a5a0361c984c73203b22b094b);
+
+
+        var popup_aa898888ad48c24b6f6403e05b45e8ec = L.popup({"maxWidth": 3000});
+
+
+            var html_78c2c107c8169572f2c0946c05a0b844 = $(`<div id="html_78c2c107c8169572f2c0946c05a0b844" style="width: 144.0px; height: 100.0%;">                                             07:00左右到过</br>                                             欣欣嘉园西区北门对面公厕</br>                                             </div>`)[0];
+            popup_aa898888ad48c24b6f6403e05b45e8ec.setContent(html_78c2c107c8169572f2c0946c05a0b844);
+
+
+        marker_69c3efe2944d9092ea26a912c0bbd836.bindPopup(popup_aa898888ad48c24b6f6403e05b45e8ec)
+        ;
+
+
+
+
+                var lat_lng_popup_1c9bc6b4d64b1c02d23d6beb37ffaddc = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_1c9bc6b4d64b1c02d23d6beb37ffaddc
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_56da6d2c292264b503680af19191a1c8);
+                    }
+                map_56da6d2c292264b503680af19191a1c8.on('click', latLngPop);
+
+</script>
+<script src="shuiyin.js"></script>
+<script type="text/javascript">
+var now = getNow();
+watermark({"watermark_txt":"兰州大学离散算法团队"+now});
+</script>
+
