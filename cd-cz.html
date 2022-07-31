@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e5bc11d44058b67c0f7236072d38aa91 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+                     <h3 align="center" style="font-size:16px"><b>成都市崇州市近10日病例轨迹</b></h3>
+                     
+    
+            <div class="folium-map" id="map_e5bc11d44058b67c0f7236072d38aa91" ></div>
+        
+</body>
+<script>    
+    
+            var map_e5bc11d44058b67c0f7236072d38aa91 = L.map(
+                "map_e5bc11d44058b67c0f7236072d38aa91",
+                {
+                    center: [30.6297758989006, 103.69245673302645],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_eaa42103b967a8bfb08222350ec5e612 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e5bc11d44058b67c0f7236072d38aa91);
+        
+    
+            var feature_group_a5fab66f49160215cc8e3d1df3928a80 = L.featureGroup(
+                {}
+            ).addTo(map_e5bc11d44058b67c0f7236072d38aa91);
+        
+    
+            var poly_line_f3e0f4962b4dbb1822d2afed5060cccb = L.polyline(
+                [[30.6297758989006, 103.69245673302645]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a5fab66f49160215cc8e3d1df3928a80);
+        
+    
+            var poly_line_34ba4703f7b9dbf87440f1a432e28307 = L.polyline(
+                [[30.6297758989006, 103.69245673302645]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_a5fab66f49160215cc8e3d1df3928a80);
+        
+    
+            var marker_12080dd2dd1fa0d54c76bb4725a56c8d = L.marker(
+                [30.6297758989006, 103.69245673302645],
+                {}
+            ).addTo(feature_group_a5fab66f49160215cc8e3d1df3928a80);
+        
+    
+            var icon_ee61e0ccb618ec14f7b3158a4524b412 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_12080dd2dd1fa0d54c76bb4725a56c8d.setIcon(icon_ee61e0ccb618ec14f7b3158a4524b412);
+        
+    
+        var popup_23295de6347767f95dc67ee5140424e0 = L.popup({"maxWidth": 3000});
+
+        
+            var html_6a350f125d1e0835d5009dba959ede79 = $(`<div id="html_6a350f125d1e0835d5009dba959ede79" style="width: 264.0px; height: 100.0%;">                                             7月21日14:52-16:06</br>                                             成都市崇州市都会美家、良品铺子（万达广场店）</br>                                             </div>`)[0];
+            popup_23295de6347767f95dc67ee5140424e0.setContent(html_6a350f125d1e0835d5009dba959ede79);
+        
+
+        marker_12080dd2dd1fa0d54c76bb4725a56c8d.bindPopup(popup_23295de6347767f95dc67ee5140424e0)
+        ;
+
+        
+    
+    
+            var layer_control_aaa61412840242c4aaa7a1da9cdaa577 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_eaa42103b967a8bfb08222350ec5e612,
+                },
+                overlays :  {
+                    "7\u670821\u65e5" : feature_group_a5fab66f49160215cc8e3d1df3928a80,
+                },
+            };
+            L.control.layers(
+                layer_control_aaa61412840242c4aaa7a1da9cdaa577.base_layers,
+                layer_control_aaa61412840242c4aaa7a1da9cdaa577.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_e5bc11d44058b67c0f7236072d38aa91);
+        
+    
+                var lat_lng_popup_63a786726e4b1034856ef556ec87d225 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_63a786726e4b1034856ef556ec87d225
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_e5bc11d44058b67c0f7236072d38aa91);
+                    }
+                map_e5bc11d44058b67c0f7236072d38aa91.on('click', latLngPop);
+            
+</script>
+<script src="shuiyin.js"></script>
+    <script type="text/javascript">
+    var now = getNow();
+    watermark({"watermark_txt":"兰州大学离散算法团队"+now});
+    </script>

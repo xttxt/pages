@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_39474439cd8a2988755d2fde24a13fab {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+                     <h3 align="center" style="font-size:16px"><b>成都市邛崃市近10日病例轨迹</b></h3>
+                     
+    
+            <div class="folium-map" id="map_39474439cd8a2988755d2fde24a13fab" ></div>
+        
+</body>
+<script>    
+    
+            var map_39474439cd8a2988755d2fde24a13fab = L.map(
+                "map_39474439cd8a2988755d2fde24a13fab",
+                {
+                    center: [30.40746737324433, 103.4695954004116],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f33c37223fbdf6db9a8db71b97cbc48e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_39474439cd8a2988755d2fde24a13fab);
+        
+    
+            var feature_group_6927e093bb2b29522eda044a4a980fd4 = L.featureGroup(
+                {}
+            ).addTo(map_39474439cd8a2988755d2fde24a13fab);
+        
+    
+            var poly_line_be03d907e91dfba07389d8cd5a522ab9 = L.polyline(
+                [[30.40746737324433, 103.4695954004116], [30.41639860085413, 103.47048112964444], [30.41668644760292, 103.4642611724628], [30.398829917392344, 103.47021846511332], [30.400471327784512, 103.4699059446264]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6927e093bb2b29522eda044a4a980fd4);
+        
+    
+            var poly_line_d39fbda1f5b27b988899e71abc773a31 = L.polyline(
+                [[30.40746737324433, 103.4695954004116], [30.41639860085413, 103.47048112964444], [30.41668644760292, 103.4642611724628], [30.398829917392344, 103.47021846511332], [30.400471327784512, 103.4699059446264]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_6927e093bb2b29522eda044a4a980fd4);
+        
+    
+            var marker_8b9e8edc009c4c5dcdb7918ab0979f77 = L.marker(
+                [30.40746737324433, 103.4695954004116],
+                {}
+            ).addTo(feature_group_6927e093bb2b29522eda044a4a980fd4);
+        
+    
+            var icon_8916f37504193aefb5153e393a4a38c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8b9e8edc009c4c5dcdb7918ab0979f77.setIcon(icon_8916f37504193aefb5153e393a4a38c7);
+        
+    
+        var popup_99ba4f6563dd63409a357e0aed18dc34 = L.popup({"maxWidth": 3000});
+
+        
+            var html_cbf2de43d545f8ec0b9161f4b39690d5 = $(`<div id="html_cbf2de43d545f8ec0b9161f4b39690d5" style="width: 196.0px; height: 100.0%;">                                             7月21日11:00-11:30</br>                                             成都市邛崃市家乐福(瑞云·欣广场店)</br>                                             </div>`)[0];
+            popup_99ba4f6563dd63409a357e0aed18dc34.setContent(html_cbf2de43d545f8ec0b9161f4b39690d5);
+        
+
+        marker_8b9e8edc009c4c5dcdb7918ab0979f77.bindPopup(popup_99ba4f6563dd63409a357e0aed18dc34)
+        ;
+
+        
+    
+    
+            var marker_06582116f30903b5e2fe96b1249714a1 = L.marker(
+                [30.41639860085413, 103.47048112964444],
+                {}
+            ).addTo(feature_group_6927e093bb2b29522eda044a4a980fd4);
+        
+    
+            var icon_82004494945284365a67df87d9582693 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_06582116f30903b5e2fe96b1249714a1.setIcon(icon_82004494945284365a67df87d9582693);
+        
+    
+        var popup_81eccc4d578dc67588f7b5e88929df7f = L.popup({"maxWidth": 3000});
+
+        
+            var html_42c1dca12db893fa51c3d721de2eed28 = $(`<div id="html_42c1dca12db893fa51c3d721de2eed28" style="width: 204.0px; height: 100.0%;">                                             7月21日11:50-12:00</br>                                             成都市邛崃市吉姆大师傅（天庆街店）</br>                                             </div>`)[0];
+            popup_81eccc4d578dc67588f7b5e88929df7f.setContent(html_42c1dca12db893fa51c3d721de2eed28);
+        
+
+        marker_06582116f30903b5e2fe96b1249714a1.bindPopup(popup_81eccc4d578dc67588f7b5e88929df7f)
+        ;
+
+        
+    
+    
+            var marker_2dd0e3e97db3807f18694e1ceec8bc3a = L.marker(
+                [30.41668644760292, 103.4642611724628],
+                {}
+            ).addTo(feature_group_6927e093bb2b29522eda044a4a980fd4);
+        
+    
+            var icon_15096e9a228f480136b5c2311a23a356 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2dd0e3e97db3807f18694e1ceec8bc3a.setIcon(icon_15096e9a228f480136b5c2311a23a356);
+        
+    
+        var popup_a1acd81015364be0a43259e3b2e03fa6 = L.popup({"maxWidth": 3000});
+
+        
+            var html_d5f4e84fc33755a65b1646ee015ff86e = $(`<div id="html_d5f4e84fc33755a65b1646ee015ff86e" style="width: 304.0px; height: 100.0%;">                                             7月21日11:53-12:00</br>                                             成都市邛崃市泰果地水果店（文君街道天庆街149号附3号）</br>                                             </div>`)[0];
+            popup_a1acd81015364be0a43259e3b2e03fa6.setContent(html_d5f4e84fc33755a65b1646ee015ff86e);
+        
+
+        marker_2dd0e3e97db3807f18694e1ceec8bc3a.bindPopup(popup_a1acd81015364be0a43259e3b2e03fa6)
+        ;
+
+        
+    
+    
+            var marker_d1946c39a0d8399429f2dff63c552df6 = L.marker(
+                [30.398829917392344, 103.47021846511332],
+                {}
+            ).addTo(feature_group_6927e093bb2b29522eda044a4a980fd4);
+        
+    
+            var icon_d518721d7fc37f629533e54aa54d8def = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d1946c39a0d8399429f2dff63c552df6.setIcon(icon_d518721d7fc37f629533e54aa54d8def);
+        
+    
+        var popup_ecabdb2f6a98ddd39f3ad15adf84dd00 = L.popup({"maxWidth": 3000});
+
+        
+            var html_191ecb57f31de9c85a2b0a63bda276cf = $(`<div id="html_191ecb57f31de9c85a2b0a63bda276cf" style="width: 272.0px; height: 100.0%;">                                             7月21日17:00-7月22日5:00</br>                                             成都市邛崃市孝仁堂（安居路文南小区北侧约30米）</br>                                             </div>`)[0];
+            popup_ecabdb2f6a98ddd39f3ad15adf84dd00.setContent(html_191ecb57f31de9c85a2b0a63bda276cf);
+        
+
+        marker_d1946c39a0d8399429f2dff63c552df6.bindPopup(popup_ecabdb2f6a98ddd39f3ad15adf84dd00)
+        ;
+
+        
+    
+    
+            var marker_939262fa13f156ae4887f995301713f0 = L.marker(
+                [30.400471327784512, 103.4699059446264],
+                {}
+            ).addTo(feature_group_6927e093bb2b29522eda044a4a980fd4);
+        
+    
+            var icon_ee37526859bc1103d83288de85721122 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_939262fa13f156ae4887f995301713f0.setIcon(icon_ee37526859bc1103d83288de85721122);
+        
+    
+        var popup_fbf329e2705526abc47c3d1d1bf97419 = L.popup({"maxWidth": 3000});
+
+        
+            var html_46b141e12ac0cffbaad0868b72480bc8 = $(`<div id="html_46b141e12ac0cffbaad0868b72480bc8" style="width: 180.0px; height: 100.0%;">                                             7月21日18:00-19:00</br>                                             成都市邛崃市紫竹园（安居路店）</br>                                             </div>`)[0];
+            popup_fbf329e2705526abc47c3d1d1bf97419.setContent(html_46b141e12ac0cffbaad0868b72480bc8);
+        
+
+        marker_939262fa13f156ae4887f995301713f0.bindPopup(popup_fbf329e2705526abc47c3d1d1bf97419)
+        ;
+
+        
+    
+    
+            var feature_group_9d0a3948ee175122cdf1141d99a42ba9 = L.featureGroup(
+                {}
+            ).addTo(map_39474439cd8a2988755d2fde24a13fab);
+        
+    
+            var poly_line_1d438f1dff6c0afd97f683f4cf54a991 = L.polyline(
+                [[30.432165063989707, 103.4524745058664], [30.41658663175956, 103.4654075001241], [30.396711726355687, 103.52108609258244], [30.34005923750619, 103.42785994675694], [30.40247177362415, 103.7292838453746], [30.39927730143877, 103.46526844243115]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9d0a3948ee175122cdf1141d99a42ba9);
+        
+    
+            var poly_line_043429ba927d3d41a7ff2ef87e9c8351 = L.polyline(
+                [[30.432165063989707, 103.4524745058664], [30.41658663175956, 103.4654075001241], [30.396711726355687, 103.52108609258244], [30.34005923750619, 103.42785994675694], [30.40247177362415, 103.7292838453746], [30.39927730143877, 103.46526844243115]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_9d0a3948ee175122cdf1141d99a42ba9);
+        
+    
+            var marker_4c381de8c0a8c981b02c614c29572f28 = L.marker(
+                [30.432165063989707, 103.4524745058664],
+                {}
+            ).addTo(feature_group_9d0a3948ee175122cdf1141d99a42ba9);
+        
+    
+            var icon_f642f714a55b11e3c8fdb74a97899d81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4c381de8c0a8c981b02c614c29572f28.setIcon(icon_f642f714a55b11e3c8fdb74a97899d81);
+        
+    
+        var popup_25e066e6a7932fc0f68ab703737fa3b6 = L.popup({"maxWidth": 3000});
+
+        
+            var html_b2beec08b62be9efea8e1c6a8fc3b9f7 = $(`<div id="html_b2beec08b62be9efea8e1c6a8fc3b9f7" style="width: 280.0px; height: 100.0%;">                                             7月22日7:30-7:55</br>                                             成都市邛崃市西桥君君面馆（邛水路西江村1组128号）</br>                                             </div>`)[0];
+            popup_25e066e6a7932fc0f68ab703737fa3b6.setContent(html_b2beec08b62be9efea8e1c6a8fc3b9f7);
+        
+
+        marker_4c381de8c0a8c981b02c614c29572f28.bindPopup(popup_25e066e6a7932fc0f68ab703737fa3b6)
+        ;
+
+        
+    
+    
+            var marker_cbc0ec1ebf38b0013167d7db745f1004 = L.marker(
+                [30.41658663175956, 103.4654075001241],
+                {}
+            ).addTo(feature_group_9d0a3948ee175122cdf1141d99a42ba9);
+        
+    
+            var icon_4e245d8e5cc80ab6cbccd8585e7f1bc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_cbc0ec1ebf38b0013167d7db745f1004.setIcon(icon_4e245d8e5cc80ab6cbccd8585e7f1bc9);
+        
+    
+        var popup_49ec54f0297f364ce7e137f70edaf2ac = L.popup({"maxWidth": 3000});
+
+        
+            var html_3e0e624aebe23df8fdf765e532dff50c = $(`<div id="html_3e0e624aebe23df8fdf765e532dff50c" style="width: 240.0px; height: 100.0%;">                                             7月22日8:00-8:10</br>                                             成都市邛崃市杨牛肉饭店（天庆街68号附1号）</br>                                             </div>`)[0];
+            popup_49ec54f0297f364ce7e137f70edaf2ac.setContent(html_3e0e624aebe23df8fdf765e532dff50c);
+        
+
+        marker_cbc0ec1ebf38b0013167d7db745f1004.bindPopup(popup_49ec54f0297f364ce7e137f70edaf2ac)
+        ;
+
+        
+    
+    
+            var marker_560826defc4bf4b6ca098df75e7f3aa4 = L.marker(
+                [30.396711726355687, 103.52108609258244],
+                {}
+            ).addTo(feature_group_9d0a3948ee175122cdf1141d99a42ba9);
+        
+    
+            var icon_5a17271cc94eba4b1861485d77af0510 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_560826defc4bf4b6ca098df75e7f3aa4.setIcon(icon_5a17271cc94eba4b1861485d77af0510);
+        
+    
+        var popup_e12883bcec0ef6ed03a294a331068a9f = L.popup({"maxWidth": 3000});
+
+        
+            var html_ea26b930bf86f92947f63ffe9b29a16b = $(`<div id="html_ea26b930bf86f92947f63ffe9b29a16b" style="width: 284.0px; height: 100.0%;">                                             7月22日8:30-11:00</br>                                             成都市邛崃市邛州印象酒店（滨江路中段309号附26号）</br>                                             </div>`)[0];
+            popup_e12883bcec0ef6ed03a294a331068a9f.setContent(html_ea26b930bf86f92947f63ffe9b29a16b);
+        
+
+        marker_560826defc4bf4b6ca098df75e7f3aa4.bindPopup(popup_e12883bcec0ef6ed03a294a331068a9f)
+        ;
+
+        
+    
+    
+            var marker_f9370bbfe559f6b996b1f84b79eea700 = L.marker(
+                [30.34005923750619, 103.42785994675694],
+                {}
+            ).addTo(feature_group_9d0a3948ee175122cdf1141d99a42ba9);
+        
+    
+            var icon_5686e8de6bca1791c14feec5e4722463 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f9370bbfe559f6b996b1f84b79eea700.setIcon(icon_5686e8de6bca1791c14feec5e4722463);
+        
+    
+        var popup_138ce785d13b126b17e8a6ecca3f7e9b = L.popup({"maxWidth": 3000});
+
+        
+            var html_1e1a7fb151b62d78f13e7e3956028a6e = $(`<div id="html_1e1a7fb151b62d78f13e7e3956028a6e" style="width: 288.0px; height: 100.0%;">                                             7月22日9:40-9:50</br>                                             成都市邛崃市冯三哥面馆（孔明街道龙虎路125–131号）</br>                                             </div>`)[0];
+            popup_138ce785d13b126b17e8a6ecca3f7e9b.setContent(html_1e1a7fb151b62d78f13e7e3956028a6e);
+        
+
+        marker_f9370bbfe559f6b996b1f84b79eea700.bindPopup(popup_138ce785d13b126b17e8a6ecca3f7e9b)
+        ;
+
+        
+    
+    
+            var marker_d5a08c1304ecdce9d20d4fd652115a32 = L.marker(
+                [30.40247177362415, 103.7292838453746],
+                {}
+            ).addTo(feature_group_9d0a3948ee175122cdf1141d99a42ba9);
+        
+    
+            var icon_646ce79e0ebbcce328af7ebb60fc6044 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d5a08c1304ecdce9d20d4fd652115a32.setIcon(icon_646ce79e0ebbcce328af7ebb60fc6044);
+        
+    
+        var popup_ba5b61aae84e2841524a944ef2b37e75 = L.popup({"maxWidth": 3000});
+
+        
+            var html_ea3411ca56f8f6c914948ab455df6783 = $(`<div id="html_ea3411ca56f8f6c914948ab455df6783" style="width: 280.0px; height: 100.0%;">                                             7月22日11:35-15:36</br>                                             成都市邛崃市滕龙阁酒店（羊安街道界牌村11组99号）</br>                                             </div>`)[0];
+            popup_ba5b61aae84e2841524a944ef2b37e75.setContent(html_ea3411ca56f8f6c914948ab455df6783);
+        
+
+        marker_d5a08c1304ecdce9d20d4fd652115a32.bindPopup(popup_ba5b61aae84e2841524a944ef2b37e75)
+        ;
+
+        
+    
+    
+            var marker_d9c1957200a1c7edf3600b9ef7d3db15 = L.marker(
+                [30.39927730143877, 103.46526844243115],
+                {}
+            ).addTo(feature_group_9d0a3948ee175122cdf1141d99a42ba9);
+        
+    
+            var icon_b1258d03fca6cc3b335d2c92393ca8d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d9c1957200a1c7edf3600b9ef7d3db15.setIcon(icon_b1258d03fca6cc3b335d2c92393ca8d0);
+        
+    
+        var popup_167cc20e5f09daa360a458c4498506f7 = L.popup({"maxWidth": 3000});
+
+        
+            var html_465c8be1421c3157a06e7d91c53e5f75 = $(`<div id="html_465c8be1421c3157a06e7d91c53e5f75" style="width: 372.0px; height: 100.0%;">                                             7月22日21:30-23:00</br>                                             成都市邛崃市喜瑞达·湖畔酒店（大东街河滨公园4号陌啡咖啡馆楼上）</br>                                             </div>`)[0];
+            popup_167cc20e5f09daa360a458c4498506f7.setContent(html_465c8be1421c3157a06e7d91c53e5f75);
+        
+
+        marker_d9c1957200a1c7edf3600b9ef7d3db15.bindPopup(popup_167cc20e5f09daa360a458c4498506f7)
+        ;
+
+        
+    
+    
+            var layer_control_f4f78e1ad897df59211db1aa7a993a0d = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_f33c37223fbdf6db9a8db71b97cbc48e,
+                },
+                overlays :  {
+                    "7\u670821\u65e5" : feature_group_6927e093bb2b29522eda044a4a980fd4,
+                    "7\u670822\u65e5" : feature_group_9d0a3948ee175122cdf1141d99a42ba9,
+                },
+            };
+            L.control.layers(
+                layer_control_f4f78e1ad897df59211db1aa7a993a0d.base_layers,
+                layer_control_f4f78e1ad897df59211db1aa7a993a0d.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_39474439cd8a2988755d2fde24a13fab);
+        
+    
+                var lat_lng_popup_cd5fc99956686c17d94a98ec54831036 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_cd5fc99956686c17d94a98ec54831036
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_39474439cd8a2988755d2fde24a13fab);
+                    }
+                map_39474439cd8a2988755d2fde24a13fab.on('click', latLngPop);
+            
+</script>
+<script src="shuiyin.js"></script>
+    <script type="text/javascript">
+    var now = getNow();
+    watermark({"watermark_txt":"兰州大学离散算法团队"+now});
+    </script>

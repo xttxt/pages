@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a874f94572275b8f8920fdd1adcb32f6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+                     <h3 align="center" style="font-size:16px"><b>成都市大邑县近10日病例轨迹</b></h3>
+                     
+    
+            <div class="folium-map" id="map_a874f94572275b8f8920fdd1adcb32f6" ></div>
+        
+</body>
+<script>    
+    
+            var map_a874f94572275b8f8920fdd1adcb32f6 = L.map(
+                "map_a874f94572275b8f8920fdd1adcb32f6",
+                {
+                    center: [30.59315540240197, 103.52752981766662],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b3a1ec61617daa37aa42ae6f66a6b6ab = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a874f94572275b8f8920fdd1adcb32f6);
+        
+    
+            var feature_group_3608e2357f438d43d660f839c43a009b = L.featureGroup(
+                {}
+            ).addTo(map_a874f94572275b8f8920fdd1adcb32f6);
+        
+    
+            var poly_line_d67a6def657faa7ab1fd518e7d7781b6 = L.polyline(
+                [[30.59315540240197, 103.52752981766662]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_3608e2357f438d43d660f839c43a009b);
+        
+    
+            var poly_line_9ff155c7cbeb9d231d532c29e27b8409 = L.polyline(
+                [[30.59315540240197, 103.52752981766662]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_3608e2357f438d43d660f839c43a009b);
+        
+    
+            var marker_cd57587a31daef734aefa5d66498028d = L.marker(
+                [30.59315540240197, 103.52752981766662],
+                {}
+            ).addTo(feature_group_3608e2357f438d43d660f839c43a009b);
+        
+    
+            var icon_22e20e6e1b594da9ffaef3cd2710bd2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_cd57587a31daef734aefa5d66498028d.setIcon(icon_22e20e6e1b594da9ffaef3cd2710bd2c);
+        
+    
+        var popup_963415b49ca0600b0f5bc381ca1dcfe5 = L.popup({"maxWidth": 3000});
+
+        
+            var html_f20f71d6df1f6232474f9557cc000776 = $(`<div id="html_f20f71d6df1f6232474f9557cc000776" style="width: 172.0px; height: 100.0%;">                                             7月21日-7月25日</br>                                             成都市大邑县赵善村9组猕猴桃园</br>                                             </div>`)[0];
+            popup_963415b49ca0600b0f5bc381ca1dcfe5.setContent(html_f20f71d6df1f6232474f9557cc000776);
+        
+
+        marker_cd57587a31daef734aefa5d66498028d.bindPopup(popup_963415b49ca0600b0f5bc381ca1dcfe5)
+        ;
+
+        
+    
+    
+            var layer_control_275cbe7a22e25ace685534fe0c078794 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_b3a1ec61617daa37aa42ae6f66a6b6ab,
+                },
+                overlays :  {
+                    "7\u670821-25\u65e5" : feature_group_3608e2357f438d43d660f839c43a009b,
+                },
+            };
+            L.control.layers(
+                layer_control_275cbe7a22e25ace685534fe0c078794.base_layers,
+                layer_control_275cbe7a22e25ace685534fe0c078794.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_a874f94572275b8f8920fdd1adcb32f6);
+        
+    
+                var lat_lng_popup_775524cd78f804d3433ed69089902a2e = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_775524cd78f804d3433ed69089902a2e
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_a874f94572275b8f8920fdd1adcb32f6);
+                    }
+                map_a874f94572275b8f8920fdd1adcb32f6.on('click', latLngPop);
+            
+</script>
+<script src="shuiyin.js"></script>
+    <script type="text/javascript">
+    var now = getNow();
+    watermark({"watermark_txt":"兰州大学离散算法团队"+now});
+    </script>

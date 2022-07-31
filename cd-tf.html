@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0b4c8ac8fb048027faeb61da98e2d9de {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+                     <h3 align="center" style="font-size:16px"><b>成都市天府新区近10日病例轨迹</b></h3>
+                     
+    
+            <div class="folium-map" id="map_0b4c8ac8fb048027faeb61da98e2d9de" ></div>
+        
+</body>
+<script>    
+    
+            var map_0b4c8ac8fb048027faeb61da98e2d9de = L.map(
+                "map_0b4c8ac8fb048027faeb61da98e2d9de",
+                {
+                    center: [30.69322490455405, 103.80135202186251],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_76d08e5a1fcc25c1d5071df7c5c8566a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0b4c8ac8fb048027faeb61da98e2d9de);
+        
+    
+            var feature_group_274d141e0930ac68b3b20d43b427b98d = L.featureGroup(
+                {}
+            ).addTo(map_0b4c8ac8fb048027faeb61da98e2d9de);
+        
+    
+            var poly_line_8a505fb49d2aac900652c24c1b749c93 = L.polyline(
+                [[30.69322490455405, 103.80135202186251]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_274d141e0930ac68b3b20d43b427b98d);
+        
+    
+            var poly_line_7ad6e1717aaa9c8fbe6e149d4c87e3e0 = L.polyline(
+                [[30.69322490455405, 103.80135202186251]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_274d141e0930ac68b3b20d43b427b98d);
+        
+    
+            var marker_cc28f6363bdd1e76d9d50a482a17aa2b = L.marker(
+                [30.69322490455405, 103.80135202186251],
+                {}
+            ).addTo(feature_group_274d141e0930ac68b3b20d43b427b98d);
+        
+    
+            var icon_ddf7f026ec5c4a1f738d798131bedd1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_cc28f6363bdd1e76d9d50a482a17aa2b.setIcon(icon_ddf7f026ec5c4a1f738d798131bedd1c);
+        
+    
+        var popup_6e6462d5d9adb06e8c1e4aa83f6d2e27 = L.popup({"maxWidth": 3000});
+
+        
+            var html_13380c687564dccc6e39a75abc219c07 = $(`<div id="html_13380c687564dccc6e39a75abc219c07" style="width: 292.0px; height: 100.0%;">                                             7月21日21:30-23:00</br>                                             成都市天府新区海椒市落舌·麻辣烫冒菜(御香山直营店)</br>                                             </div>`)[0];
+            popup_6e6462d5d9adb06e8c1e4aa83f6d2e27.setContent(html_13380c687564dccc6e39a75abc219c07);
+        
+
+        marker_cc28f6363bdd1e76d9d50a482a17aa2b.bindPopup(popup_6e6462d5d9adb06e8c1e4aa83f6d2e27)
+        ;
+
+        
+    
+    
+            var layer_control_0d29ff1e7058620a09e87e1dceae001a = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_76d08e5a1fcc25c1d5071df7c5c8566a,
+                },
+                overlays :  {
+                    "7\u670821\u65e5" : feature_group_274d141e0930ac68b3b20d43b427b98d,
+                },
+            };
+            L.control.layers(
+                layer_control_0d29ff1e7058620a09e87e1dceae001a.base_layers,
+                layer_control_0d29ff1e7058620a09e87e1dceae001a.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_0b4c8ac8fb048027faeb61da98e2d9de);
+        
+    
+                var lat_lng_popup_2a99c471be1f03118ef49c3e2a37bf02 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_2a99c471be1f03118ef49c3e2a37bf02
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_0b4c8ac8fb048027faeb61da98e2d9de);
+                    }
+                map_0b4c8ac8fb048027faeb61da98e2d9de.on('click', latLngPop);
+            
+</script>
+<script src="shuiyin.js"></script>
+    <script type="text/javascript">
+    var now = getNow();
+    watermark({"watermark_txt":"兰州大学离散算法团队"+now});
+    </script>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8d4d03e85a520b685c48a44f7c38937f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+                     <h3 align="center" style="font-size:16px"><b>成都市双流区近10日病例轨迹</b></h3>
+                     
+    
+            <div class="folium-map" id="map_8d4d03e85a520b685c48a44f7c38937f" ></div>
+        
+</body>
+<script>    
+    
+            var map_8d4d03e85a520b685c48a44f7c38937f = L.map(
+                "map_8d4d03e85a520b685c48a44f7c38937f",
+                {
+                    center: [30.502512907258065, 104.00940954557134],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cad27c7a43d2b8fdbe4fed25190a3162 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8d4d03e85a520b685c48a44f7c38937f);
+        
+    
+            var feature_group_c3259410f4ca32b4128e6d87af8da7f1 = L.featureGroup(
+                {}
+            ).addTo(map_8d4d03e85a520b685c48a44f7c38937f);
+        
+    
+            var poly_line_a28ac5eb846a82156180107312dae83e = L.polyline(
+                [[30.502512907258065, 104.00940954557134], [30.58203780966285, 103.97149963801247], [30.602001038362417, 103.93317467239918], [30.604326948128517, 103.93330559250104]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c3259410f4ca32b4128e6d87af8da7f1);
+        
+    
+            var poly_line_a9ffb138a2dc5d5db677ae77123ae7b0 = L.polyline(
+                [[30.502512907258065, 104.00940954557134], [30.58203780966285, 103.97149963801247], [30.602001038362417, 103.93317467239918], [30.604326948128517, 103.93330559250104]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_c3259410f4ca32b4128e6d87af8da7f1);
+        
+    
+            var marker_e2dbd8007605c1f3877299501e1f3dab = L.marker(
+                [30.502512907258065, 104.00940954557134],
+                {}
+            ).addTo(feature_group_c3259410f4ca32b4128e6d87af8da7f1);
+        
+    
+            var icon_191f718a22a666cacdd83cbe1e651b4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e2dbd8007605c1f3877299501e1f3dab.setIcon(icon_191f718a22a666cacdd83cbe1e651b4b);
+        
+    
+        var popup_0648b07c4b7292a287530503b55f922a = L.popup({"maxWidth": 3000});
+
+        
+            var html_59684d489dad4983397a21d5f43e4149 = $(`<div id="html_59684d489dad4983397a21d5f43e4149" style="width: 332.0px; height: 100.0%;">                                             7月21日13:49-15:32</br>                                             成都市双流区志诚商贸温家山仓库（怡心街道温家山北路83号）</br>                                             </div>`)[0];
+            popup_0648b07c4b7292a287530503b55f922a.setContent(html_59684d489dad4983397a21d5f43e4149);
+        
+
+        marker_e2dbd8007605c1f3877299501e1f3dab.bindPopup(popup_0648b07c4b7292a287530503b55f922a)
+        ;
+
+        
+    
+    
+            var marker_18261b50ed0e74e070cf0bba5375a031 = L.marker(
+                [30.58203780966285, 103.97149963801247],
+                {}
+            ).addTo(feature_group_c3259410f4ca32b4128e6d87af8da7f1);
+        
+    
+            var icon_45de14f1067160756a91b252631bad46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_18261b50ed0e74e070cf0bba5375a031.setIcon(icon_45de14f1067160756a91b252631bad46);
+        
+    
+        var popup_8c7dc3144b32ca3e4ab5c495d822dfb6 = L.popup({"maxWidth": 3000});
+
+        
+            var html_45fef8b8d613d2d4457d64810fd18a28 = $(`<div id="html_45fef8b8d613d2d4457d64810fd18a28" style="width: 244.0px; height: 100.0%;">                                             7月21日16:25-23:39</br>                                             成都市双流区双桂精品民宿（天鹅度假村5栋）</br>                                             </div>`)[0];
+            popup_8c7dc3144b32ca3e4ab5c495d822dfb6.setContent(html_45fef8b8d613d2d4457d64810fd18a28);
+        
+
+        marker_18261b50ed0e74e070cf0bba5375a031.bindPopup(popup_8c7dc3144b32ca3e4ab5c495d822dfb6)
+        ;
+
+        
+    
+    
+            var marker_0b496414b72861d869935a9ada60c48d = L.marker(
+                [30.602001038362417, 103.93317467239918],
+                {}
+            ).addTo(feature_group_c3259410f4ca32b4128e6d87af8da7f1);
+        
+    
+            var icon_a2a335d1364ac3c014da456a3936d612 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0b496414b72861d869935a9ada60c48d.setIcon(icon_a2a335d1364ac3c014da456a3936d612);
+        
+    
+        var popup_833280b5ec92756525982c153af056ed = L.popup({"maxWidth": 3000});
+
+        
+            var html_0a52f3d255c00a53632f9974e4522268 = $(`<div id="html_0a52f3d255c00a53632f9974e4522268" style="width: 204.0px; height: 100.0%;">                                             7月21日17:20-20:25</br>                                             成都市双流区都会美家（万达广场店）</br>                                             </div>`)[0];
+            popup_833280b5ec92756525982c153af056ed.setContent(html_0a52f3d255c00a53632f9974e4522268);
+        
+
+        marker_0b496414b72861d869935a9ada60c48d.bindPopup(popup_833280b5ec92756525982c153af056ed)
+        ;
+
+        
+    
+    
+            var marker_c10d242bb130107ca6f23b2530204467 = L.marker(
+                [30.604326948128517, 103.93330559250104],
+                {}
+            ).addTo(feature_group_c3259410f4ca32b4128e6d87af8da7f1);
+        
+    
+            var icon_5b54c1a2982f7e4c811258d3423fd855 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c10d242bb130107ca6f23b2530204467.setIcon(icon_5b54c1a2982f7e4c811258d3423fd855);
+        
+    
+        var popup_1313f12af9db2ce593f102202936dd7e = L.popup({"maxWidth": 3000});
+
+        
+            var html_d45ae31e61621697ecff214fd07516cf = $(`<div id="html_d45ae31e61621697ecff214fd07516cf" style="width: 376.0px; height: 100.0%;">                                             7月21日20:37-20:52</br>                                             成都市双流区馄饨王牛肉面（东升街道航港路1418号双流万达广场外面）</br>                                             </div>`)[0];
+            popup_1313f12af9db2ce593f102202936dd7e.setContent(html_d45ae31e61621697ecff214fd07516cf);
+        
+
+        marker_c10d242bb130107ca6f23b2530204467.bindPopup(popup_1313f12af9db2ce593f102202936dd7e)
+        ;
+
+        
+    
+    
+            var layer_control_7d6c6b0ff9c72314229baec0f9944ac0 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_cad27c7a43d2b8fdbe4fed25190a3162,
+                },
+                overlays :  {
+                    "7\u670821\u65e5" : feature_group_c3259410f4ca32b4128e6d87af8da7f1,
+                },
+            };
+            L.control.layers(
+                layer_control_7d6c6b0ff9c72314229baec0f9944ac0.base_layers,
+                layer_control_7d6c6b0ff9c72314229baec0f9944ac0.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_8d4d03e85a520b685c48a44f7c38937f);
+        
+    
+                var lat_lng_popup_06b45b8523bb503a6473eb16216a6c56 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_06b45b8523bb503a6473eb16216a6c56
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_8d4d03e85a520b685c48a44f7c38937f);
+                    }
+                map_8d4d03e85a520b685c48a44f7c38937f.on('click', latLngPop);
+            
+</script>
+<script src="shuiyin.js"></script>
+    <script type="text/javascript">
+    var now = getNow();
+    watermark({"watermark_txt":"兰州大学离散算法团队"+now});
+    </script>
