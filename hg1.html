@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_adf499f558230158117cf43ae9d009d2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+                     <h3 align="center" style="font-size:16px"><b>兰州市红古区近14日需自主报备场所</b></h3>
+                     
+    
+            <div class="folium-map" id="map_adf499f558230158117cf43ae9d009d2" ></div>
+        
+</body>
+<script>    
+    
+            var map_adf499f558230158117cf43ae9d009d2 = L.map(
+                "map_adf499f558230158117cf43ae9d009d2",
+                {
+                    center: [36.41858714863248, 102.8755919599053],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1cc1c225f4e49ff38803e3c51aa1275d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_adf499f558230158117cf43ae9d009d2);
+        
+    
+            var poly_line_50cfebb553ec9fe399ab51b6ed53cc3c = L.polyline(
+                [[36.41858714863248, 102.8755919599053], [36.4190798496661, 102.87468988151215], [36.41858714863248, 102.8755919599053]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.1, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_adf499f558230158117cf43ae9d009d2);
+        
+    
+            var poly_line_bac9c4456174ee9695f02370d431c2db = L.polyline(
+                [[36.41858714863248, 102.8755919599053], [36.4190798496661, 102.87468988151215], [36.41858714863248, 102.8755919599053]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_adf499f558230158117cf43ae9d009d2);
+        
+    
+            var feature_group_6656d5d6e49f0f7b1bc066a4342d1153 = L.featureGroup(
+                {}
+            ).addTo(map_adf499f558230158117cf43ae9d009d2);
+        
+    
+            var marker_4f7ac2dcfa6578ba3085aa502a4cbd49 = L.marker(
+                [36.41858714863248, 102.8755919599053],
+                {}
+            ).addTo(feature_group_6656d5d6e49f0f7b1bc066a4342d1153);
+        
+    
+            var icon_65a099825feaa59993aa4873603cac5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4f7ac2dcfa6578ba3085aa502a4cbd49.setIcon(icon_65a099825feaa59993aa4873603cac5b);
+        
+    
+        var popup_3cf4c3a4e23f3a937ac4ccd9d78ff34c = L.popup({"maxWidth": 3000});
+
+        
+            var html_990d4384e11a5678deabfc22696ca173 = $(`<div id="html_990d4384e11a5678deabfc22696ca173" style="width: 300.0px; height: 100.0%;">                                             7月18日09:45</br>                                             兰州市红古区矿区街道跃进街十字附近武汉一口香包子馆</br>                                             </div>`)[0];
+            popup_3cf4c3a4e23f3a937ac4ccd9d78ff34c.setContent(html_990d4384e11a5678deabfc22696ca173);
+        
+
+        marker_4f7ac2dcfa6578ba3085aa502a4cbd49.bindPopup(popup_3cf4c3a4e23f3a937ac4ccd9d78ff34c)
+        ;
+
+        
+    
+    
+            var marker_e3c807b4d90b5cc9a4f4157e47bc6af7 = L.marker(
+                [36.4190798496661, 102.87468988151215],
+                {}
+            ).addTo(feature_group_6656d5d6e49f0f7b1bc066a4342d1153);
+        
+    
+            var icon_b46db3a146568d617fd5269bb288f919 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e3c807b4d90b5cc9a4f4157e47bc6af7.setIcon(icon_b46db3a146568d617fd5269bb288f919);
+        
+    
+        var popup_2e9bce436f9fece61732df48615b32ee = L.popup({"maxWidth": 3000});
+
+        
+            var html_d2d391f0c4a5b3a06d0bcf2605737b93 = $(`<div id="html_d2d391f0c4a5b3a06d0bcf2605737b93" style="width: 240.0px; height: 100.0%;">                                             7月18日10:05</br>                                             兰州市红古区窑街大十字附近一售卖西瓜摊位</br>                                             </div>`)[0];
+            popup_2e9bce436f9fece61732df48615b32ee.setContent(html_d2d391f0c4a5b3a06d0bcf2605737b93);
+        
+
+        marker_e3c807b4d90b5cc9a4f4157e47bc6af7.bindPopup(popup_2e9bce436f9fece61732df48615b32ee)
+        ;
+
+        
+    
+    
+            var marker_049b5b83ff17c8da944bb83f83c2a9af = L.marker(
+                [36.41858714863248, 102.8755919599053],
+                {}
+            ).addTo(feature_group_6656d5d6e49f0f7b1bc066a4342d1153);
+        
+    
+            var icon_8b67602f420161d8fff17c63c332a4fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_049b5b83ff17c8da944bb83f83c2a9af.setIcon(icon_8b67602f420161d8fff17c63c332a4fb);
+        
+    
+        var popup_6e60fa60307d3e312a5c70ccbae72d67 = L.popup({"maxWidth": 3000});
+
+        
+            var html_39acb2a717845535936af2962ed31696 = $(`<div id="html_39acb2a717845535936af2962ed31696" style="width: 264.0px; height: 100.0%;">                                             7月18日10:29</br>                                             兰州市红古区跃进街十字红古窑街翠鲜新鲜蔬菜店</br>                                             </div>`)[0];
+            popup_6e60fa60307d3e312a5c70ccbae72d67.setContent(html_39acb2a717845535936af2962ed31696);
+        
+
+        marker_049b5b83ff17c8da944bb83f83c2a9af.bindPopup(popup_6e60fa60307d3e312a5c70ccbae72d67)
+        ;
+
+        
+    
+    
+            var layer_control_bc66b12b770c95169d8b4efc89b870f5 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_1cc1c225f4e49ff38803e3c51aa1275d,
+                },
+                overlays :  {
+                    "7\u670818\u65e5" : feature_group_6656d5d6e49f0f7b1bc066a4342d1153,
+                },
+            };
+            L.control.layers(
+                layer_control_bc66b12b770c95169d8b4efc89b870f5.base_layers,
+                layer_control_bc66b12b770c95169d8b4efc89b870f5.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_adf499f558230158117cf43ae9d009d2);
+        
+    
+                var lat_lng_popup_ccec280e44eff585b36b3d827285a890 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_ccec280e44eff585b36b3d827285a890
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_adf499f558230158117cf43ae9d009d2);
+                    }
+                map_adf499f558230158117cf43ae9d009d2.on('click', latLngPop);
+            
+</script>
+<script src="shuiyin.js"></script>
+    <script type="text/javascript">
+    var now = getNow();
+    watermark({"watermark_txt":"兰州大学离散算法团队"+now});
+    </script>

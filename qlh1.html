@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_209c2028745cbd48c1bac4a2333ca450 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+                     <h3 align="center" style="font-size:16px"><b>兰州市七里河区近14日需自主报备场所</b></h3>
+                     
+    
+            <div class="folium-map" id="map_209c2028745cbd48c1bac4a2333ca450" ></div>
+        
+</body>
+<script>    
+    
+            var map_209c2028745cbd48c1bac4a2333ca450 = L.map(
+                "map_209c2028745cbd48c1bac4a2333ca450",
+                {
+                    center: [36.09018820742126, 103.72444557189786],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1209eada16fb3c141a466ba05fc2b019 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_209c2028745cbd48c1bac4a2333ca450);
+        
+    
+            var feature_group_6e42b19bc86681852964f305cffe14ca = L.featureGroup(
+                {}
+            ).addTo(map_209c2028745cbd48c1bac4a2333ca450);
+        
+    
+            var poly_line_8c844e2c155d3d4ae738c4eae41fb7a9 = L.polyline(
+                [[36.09018820742126, 103.72444557189786], [36.06944986682877, 103.72287659149411], [36.05593904453156, 103.80745430102232], [36.077980890540125, 103.74215997689352], [36.05881986031682, 103.80971623429646], [36.05593904453156, 103.80745430102232], [36.0810426160027, 103.76798545183044]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6e42b19bc86681852964f305cffe14ca);
+        
+    
+            var poly_line_84d765c202c047d03cd0b61aa121d36f = L.polyline(
+                [[36.09018820742126, 103.72444557189786], [36.06944986682877, 103.72287659149411], [36.05593904453156, 103.80745430102232], [36.077980890540125, 103.74215997689352], [36.05881986031682, 103.80971623429646], [36.05593904453156, 103.80745430102232], [36.0810426160027, 103.76798545183044]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_6e42b19bc86681852964f305cffe14ca);
+        
+    
+            var marker_cef3198858ea21ea1ec712a990fd3f58 = L.marker(
+                [36.09018820742126, 103.72444557189786],
+                {}
+            ).addTo(feature_group_6e42b19bc86681852964f305cffe14ca);
+        
+    
+            var icon_1e09fa0a4dd4734e84605247a2828f95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_cef3198858ea21ea1ec712a990fd3f58.setIcon(icon_1e09fa0a4dd4734e84605247a2828f95);
+        
+    
+        var popup_e9fdc13ae129c13bc1c49dcc91a53326 = L.popup({"maxWidth": 3000});
+
+        
+            var html_857c9be608dc0cfa6a65762ec4596ed4 = $(`<div id="html_857c9be608dc0cfa6a65762ec4596ed4" style="width: 180.0px; height: 100.0%;">                                             7月18日</br>                                             兰州市七里河区秀川陆家嘴菜市场</br>                                             </div>`)[0];
+            popup_e9fdc13ae129c13bc1c49dcc91a53326.setContent(html_857c9be608dc0cfa6a65762ec4596ed4);
+        
+
+        marker_cef3198858ea21ea1ec712a990fd3f58.bindPopup(popup_e9fdc13ae129c13bc1c49dcc91a53326)
+        ;
+
+        
+    
+    
+            var marker_9709d5d17d4ccef08a8dd1c65dd07b79 = L.marker(
+                [36.06944986682877, 103.72287659149411],
+                {}
+            ).addTo(feature_group_6e42b19bc86681852964f305cffe14ca);
+        
+    
+            var icon_8114ef93dcb57553a4dffca20c2879cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9709d5d17d4ccef08a8dd1c65dd07b79.setIcon(icon_8114ef93dcb57553a4dffca20c2879cf);
+        
+    
+        var popup_c9f2994aeedb90a8dd2ea35dedef98cb = L.popup({"maxWidth": 3000});
+
+        
+            var html_3d5c6ba6f1bc1fc955e9388734aef369 = $(`<div id="html_3d5c6ba6f1bc1fc955e9388734aef369" style="width: 288.0px; height: 100.0%;">                                             7月18日05:00左右</br>                                             兰州市七里河区彭家坪恒大翡翠华庭菜市场（鸽子市）</br>                                             </div>`)[0];
+            popup_c9f2994aeedb90a8dd2ea35dedef98cb.setContent(html_3d5c6ba6f1bc1fc955e9388734aef369);
+        
+
+        marker_9709d5d17d4ccef08a8dd1c65dd07b79.bindPopup(popup_c9f2994aeedb90a8dd2ea35dedef98cb)
+        ;
+
+        
+    
+    
+            var marker_abb46b062825e2e493f309db10b86b62 = L.marker(
+                [36.05593904453156, 103.80745430102232],
+                {}
+            ).addTo(feature_group_6e42b19bc86681852964f305cffe14ca);
+        
+    
+            var icon_6cc452d52d50253a23e84b4d52edb962 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_abb46b062825e2e493f309db10b86b62.setIcon(icon_6cc452d52d50253a23e84b4d52edb962);
+        
+    
+        var popup_f0544b373f29bcd1bb0f9a67006f8d5a = L.popup({"maxWidth": 3000});
+
+        
+            var html_266b19f6161b727122a41d193ba39c25 = $(`<div id="html_266b19f6161b727122a41d193ba39c25" style="width: 156.0px; height: 100.0%;">                                             7月18日12:30左右</br>                                             兰州市七里河区华林坪菜市场</br>                                             </div>`)[0];
+            popup_f0544b373f29bcd1bb0f9a67006f8d5a.setContent(html_266b19f6161b727122a41d193ba39c25);
+        
+
+        marker_abb46b062825e2e493f309db10b86b62.bindPopup(popup_f0544b373f29bcd1bb0f9a67006f8d5a)
+        ;
+
+        
+    
+    
+            var marker_c1eab381d00fb8d02e4c140173c859b2 = L.marker(
+                [36.077980890540125, 103.74215997689352],
+                {}
+            ).addTo(feature_group_6e42b19bc86681852964f305cffe14ca);
+        
+    
+            var icon_b1cb86e6e84902991910fba42cbeeaa6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c1eab381d00fb8d02e4c140173c859b2.setIcon(icon_b1cb86e6e84902991910fba42cbeeaa6);
+        
+    
+        var popup_eaafee5618467ae6c50fd3e54f5fb533 = L.popup({"maxWidth": 3000});
+
+        
+            var html_978ec7e890e88392522afcf81c9637b8 = $(`<div id="html_978ec7e890e88392522afcf81c9637b8" style="width: 300.0px; height: 100.0%;">                                             7月18日15:00左右</br>                                             兰州市七里河区土门墩街道怡宁嘉苑东区小区门口取物点</br>                                             </div>`)[0];
+            popup_eaafee5618467ae6c50fd3e54f5fb533.setContent(html_978ec7e890e88392522afcf81c9637b8);
+        
+
+        marker_c1eab381d00fb8d02e4c140173c859b2.bindPopup(popup_eaafee5618467ae6c50fd3e54f5fb533)
+        ;
+
+        
+    
+    
+            var marker_402467e38fce0f7ca891061aa8baa319 = L.marker(
+                [36.05881986031682, 103.80971623429646],
+                {}
+            ).addTo(feature_group_6e42b19bc86681852964f305cffe14ca);
+        
+    
+            var icon_07d88155946f4de139a92c5849388232 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_402467e38fce0f7ca891061aa8baa319.setIcon(icon_07d88155946f4de139a92c5849388232);
+        
+    
+        var popup_e693d274b4d61c65f728d7b42f609f06 = L.popup({"maxWidth": 3000});
+
+        
+            var html_bf318d7b46e98eb377d9f795808aec08 = $(`<div id="html_bf318d7b46e98eb377d9f795808aec08" style="width: 228.0px; height: 100.0%;">                                             7月18日18:00左右</br>                                             兰州市七里河区华林路第一小学核酸采样点</br>                                             </div>`)[0];
+            popup_e693d274b4d61c65f728d7b42f609f06.setContent(html_bf318d7b46e98eb377d9f795808aec08);
+        
+
+        marker_402467e38fce0f7ca891061aa8baa319.bindPopup(popup_e693d274b4d61c65f728d7b42f609f06)
+        ;
+
+        
+    
+    
+            var marker_438a8a6f4bcbe404a1504eaee3305bb0 = L.marker(
+                [36.05593904453156, 103.80745430102232],
+                {}
+            ).addTo(feature_group_6e42b19bc86681852964f305cffe14ca);
+        
+    
+            var icon_639af7ba90a777df6c116698b06a5e28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_438a8a6f4bcbe404a1504eaee3305bb0.setIcon(icon_639af7ba90a777df6c116698b06a5e28);
+        
+    
+        var popup_fb31e4f48d3a7b527b3df5d80ac01d4e = L.popup({"maxWidth": 3000});
+
+        
+            var html_0e2bb8fa76e82ed37a3cc7352fb88e77 = $(`<div id="html_0e2bb8fa76e82ed37a3cc7352fb88e77" style="width: 372.0px; height: 100.0%;">                                             7月18日20:20左右</br>                                             兰州市七里河区二马路“浙景隆超市”、华林坪三马路“宁惠乐超市”</br>                                             </div>`)[0];
+            popup_fb31e4f48d3a7b527b3df5d80ac01d4e.setContent(html_0e2bb8fa76e82ed37a3cc7352fb88e77);
+        
+
+        marker_438a8a6f4bcbe404a1504eaee3305bb0.bindPopup(popup_fb31e4f48d3a7b527b3df5d80ac01d4e)
+        ;
+
+        
+    
+    
+            var marker_33bc3466ed4a41e1e064e8f746acee19 = L.marker(
+                [36.0810426160027, 103.76798545183044],
+                {}
+            ).addTo(feature_group_6e42b19bc86681852964f305cffe14ca);
+        
+    
+            var icon_e2c47e54e40c6f3e5c026768c464438a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_33bc3466ed4a41e1e064e8f746acee19.setIcon(icon_e2c47e54e40c6f3e5c026768c464438a);
+        
+    
+        var popup_a6618692b3fc7153102aef913dd766a5 = L.popup({"maxWidth": 3000});
+
+        
+            var html_a2b4bcd146b789502f51741cec5852f7 = $(`<div id="html_a2b4bcd146b789502f51741cec5852f7" style="width: 180.0px; height: 100.0%;">                                             7月18日20:30左右</br>                                             兰州市七里河区兰石润安小区物业</br>                                             </div>`)[0];
+            popup_a6618692b3fc7153102aef913dd766a5.setContent(html_a2b4bcd146b789502f51741cec5852f7);
+        
+
+        marker_33bc3466ed4a41e1e064e8f746acee19.bindPopup(popup_a6618692b3fc7153102aef913dd766a5)
+        ;
+
+        
+    
+    
+            var feature_group_ca0b4b0601c21f4b852b06077e0a70de = L.featureGroup(
+                {}
+            ).addTo(map_209c2028745cbd48c1bac4a2333ca450);
+        
+    
+            var poly_line_e09ff38c8f03535673a81457dc6e89bf = L.polyline(
+                [[36.06944986682877, 103.72287659149411], [36.07637818591002, 103.8439712284779], [36.077980890540125, 103.74215997689352], [36.05881986031682, 103.80971623429646], [36.06200589984603, 103.80703937370728], [36.05593904453156, 103.80745430102232]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca0b4b0601c21f4b852b06077e0a70de);
+        
+    
+            var poly_line_db45a91a9e5607d6de47001613a6f9d2 = L.polyline(
+                [[36.06944986682877, 103.72287659149411], [36.07637818591002, 103.8439712284779], [36.077980890540125, 103.74215997689352], [36.05881986031682, 103.80971623429646], [36.06200589984603, 103.80703937370728], [36.05593904453156, 103.80745430102232]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca0b4b0601c21f4b852b06077e0a70de);
+        
+    
+            var marker_28cbfc484aa70e5a37d33868bc4ac75d = L.marker(
+                [36.06944986682877, 103.72287659149411],
+                {}
+            ).addTo(feature_group_ca0b4b0601c21f4b852b06077e0a70de);
+        
+    
+            var icon_e51bfe76095f747bf18e6e69a18902d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_28cbfc484aa70e5a37d33868bc4ac75d.setIcon(icon_e51bfe76095f747bf18e6e69a18902d2);
+        
+    
+        var popup_10cf6aa0f16b65a1b5b1aaa4e71f263c = L.popup({"maxWidth": 3000});
+
+        
+            var html_fd82af547e66cf56e5ff9b7af59d2a0d = $(`<div id="html_fd82af547e66cf56e5ff9b7af59d2a0d" style="width: 288.0px; height: 100.0%;">                                             7月19日05:00左右</br>                                             兰州市七里河区彭家坪恒大翡翠华庭菜市场（鸽子市）</br>                                             </div>`)[0];
+            popup_10cf6aa0f16b65a1b5b1aaa4e71f263c.setContent(html_fd82af547e66cf56e5ff9b7af59d2a0d);
+        
+
+        marker_28cbfc484aa70e5a37d33868bc4ac75d.bindPopup(popup_10cf6aa0f16b65a1b5b1aaa4e71f263c)
+        ;
+
+        
+    
+    
+            var marker_7bd056bc32a8affb7759f3a0870bfcc0 = L.marker(
+                [36.07637818591002, 103.8439712284779],
+                {}
+            ).addTo(feature_group_ca0b4b0601c21f4b852b06077e0a70de);
+        
+    
+            var icon_1a59f96cb7f81f366c67bf46326e557a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_7bd056bc32a8affb7759f3a0870bfcc0.setIcon(icon_1a59f96cb7f81f366c67bf46326e557a);
+        
+    
+        var popup_cad3375f9bbdc8ed94b004bdd1bbbf0c = L.popup({"maxWidth": 3000});
+
+        
+            var html_3dc0b360ff8266737592a57e2d0f8f66 = $(`<div id="html_3dc0b360ff8266737592a57e2d0f8f66" style="width: 276.0px; height: 100.0%;">                                             7月19日15:00左右</br>                                             兰州市七里河区八里镇五里铺普能电器厂核酸采样点</br>                                             </div>`)[0];
+            popup_cad3375f9bbdc8ed94b004bdd1bbbf0c.setContent(html_3dc0b360ff8266737592a57e2d0f8f66);
+        
+
+        marker_7bd056bc32a8affb7759f3a0870bfcc0.bindPopup(popup_cad3375f9bbdc8ed94b004bdd1bbbf0c)
+        ;
+
+        
+    
+    
+            var marker_a4747f9efceed3c0cb01cd1621c9f8ad = L.marker(
+                [36.077980890540125, 103.74215997689352],
+                {}
+            ).addTo(feature_group_ca0b4b0601c21f4b852b06077e0a70de);
+        
+    
+            var icon_09adfbb8b0c5612ee8e4edb82f0cc48a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_a4747f9efceed3c0cb01cd1621c9f8ad.setIcon(icon_09adfbb8b0c5612ee8e4edb82f0cc48a);
+        
+    
+        var popup_06792384611c36e195136bee88eacdc9 = L.popup({"maxWidth": 3000});
+
+        
+            var html_e2be7c2eaa2149fa00fa66c69df2b512 = $(`<div id="html_e2be7c2eaa2149fa00fa66c69df2b512" style="width: 240.0px; height: 100.0%;">                                             7月19日16:50左右</br>                                             兰州市七里河区怡宁嘉苑东区小区门口取物点</br>                                             </div>`)[0];
+            popup_06792384611c36e195136bee88eacdc9.setContent(html_e2be7c2eaa2149fa00fa66c69df2b512);
+        
+
+        marker_a4747f9efceed3c0cb01cd1621c9f8ad.bindPopup(popup_06792384611c36e195136bee88eacdc9)
+        ;
+
+        
+    
+    
+            var marker_df5b0836b96c3c4c35e44a1223c53456 = L.marker(
+                [36.05881986031682, 103.80971623429646],
+                {}
+            ).addTo(feature_group_ca0b4b0601c21f4b852b06077e0a70de);
+        
+    
+            var icon_2d35054be4143ce2078ec086581f049a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_df5b0836b96c3c4c35e44a1223c53456.setIcon(icon_2d35054be4143ce2078ec086581f049a);
+        
+    
+        var popup_5898668db3a15f745d3a5dcec5e31271 = L.popup({"maxWidth": 3000});
+
+        
+            var html_e4d84013515561df21949d7e61b4ba32 = $(`<div id="html_e4d84013515561df21949d7e61b4ba32" style="width: 228.0px; height: 100.0%;">                                             7月19日17:00、18:00左右</br>                                             兰州市七里河区华林路第一小学核酸采样点</br>                                             </div>`)[0];
+            popup_5898668db3a15f745d3a5dcec5e31271.setContent(html_e4d84013515561df21949d7e61b4ba32);
+        
+
+        marker_df5b0836b96c3c4c35e44a1223c53456.bindPopup(popup_5898668db3a15f745d3a5dcec5e31271)
+        ;
+
+        
+    
+    
+            var marker_c96f55ef5d65e53b7b070dc352b2d951 = L.marker(
+                [36.06200589984603, 103.80703937370728],
+                {}
+            ).addTo(feature_group_ca0b4b0601c21f4b852b06077e0a70de);
+        
+    
+            var icon_83e830e07ef54285662b8389fc1677f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_c96f55ef5d65e53b7b070dc352b2d951.setIcon(icon_83e830e07ef54285662b8389fc1677f8);
+        
+    
+        var popup_e2ecb2ebcdcfb16962bb48a24b065b4d = L.popup({"maxWidth": 3000});
+
+        
+            var html_a6b828b30dbdf559b6b79a98f0b80dd0 = $(`<div id="html_a6b828b30dbdf559b6b79a98f0b80dd0" style="width: 240.0px; height: 100.0%;">                                             7月19日17:40左右</br>                                             兰州市七里河区华林坪三马路“宁惠乐超市”</br>                                             </div>`)[0];
+            popup_e2ecb2ebcdcfb16962bb48a24b065b4d.setContent(html_a6b828b30dbdf559b6b79a98f0b80dd0);
+        
+
+        marker_c96f55ef5d65e53b7b070dc352b2d951.bindPopup(popup_e2ecb2ebcdcfb16962bb48a24b065b4d)
+        ;
+
+        
+    
+    
+            var marker_ced9cdf3170fcdfc81d7fe86ec2f0c80 = L.marker(
+                [36.05593904453156, 103.80745430102232],
+                {}
+            ).addTo(feature_group_ca0b4b0601c21f4b852b06077e0a70de);
+        
+    
+            var icon_d2d95fe82910df21c1de7dfdb08a7afb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_ced9cdf3170fcdfc81d7fe86ec2f0c80.setIcon(icon_d2d95fe82910df21c1de7dfdb08a7afb);
+        
+    
+        var popup_9c4e344ab079417bbfc370c126d6253f = L.popup({"maxWidth": 3000});
+
+        
+            var html_1c2bd27dc8839b3c027d172be204ac62 = $(`<div id="html_1c2bd27dc8839b3c027d172be204ac62" style="width: 276.0px; height: 100.0%;">                                             7月19日18:24左右</br>                                             兰州市七里河区华林坪二马路菜市场、三马路菜市场</br>                                             </div>`)[0];
+            popup_9c4e344ab079417bbfc370c126d6253f.setContent(html_1c2bd27dc8839b3c027d172be204ac62);
+        
+
+        marker_ced9cdf3170fcdfc81d7fe86ec2f0c80.bindPopup(popup_9c4e344ab079417bbfc370c126d6253f)
+        ;
+
+        
+    
+    
+            var feature_group_1bfb3e1d977313a081c4607ddfd8ccb6 = L.featureGroup(
+                {}
+            ).addTo(map_209c2028745cbd48c1bac4a2333ca450);
+        
+    
+            var poly_line_d48d5755322bea3d405b88cc1a6a4145 = L.polyline(
+                [[36.06107553636348, 103.80751457732204], [36.06119939095865, 103.8076182417779], [36.07173790875531, 103.78457697493864], [36.05358014374482, 103.81220795412004], [36.07173790875531, 103.78457697493864], [36.05881986031682, 103.80971623429646], [36.06200589984603, 103.80703937370728], [36.041088021968896, 103.8145006094426], [36.05593904453156, 103.80745430102232]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1bfb3e1d977313a081c4607ddfd8ccb6);
+        
+    
+            var poly_line_894d5c7aee8cd61e6df1b505f93f6958 = L.polyline(
+                [[36.06107553636348, 103.80751457732204], [36.06119939095865, 103.8076182417779], [36.07173790875531, 103.78457697493864], [36.05358014374482, 103.81220795412004], [36.07173790875531, 103.78457697493864], [36.05881986031682, 103.80971623429646], [36.06200589984603, 103.80703937370728], [36.041088021968896, 103.8145006094426], [36.05593904453156, 103.80745430102232]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_1bfb3e1d977313a081c4607ddfd8ccb6);
+        
+    
+            var marker_7eecd5b4ffea01df731f7b776644d9b9 = L.marker(
+                [36.06107553636348, 103.80751457732204],
+                {}
+            ).addTo(feature_group_1bfb3e1d977313a081c4607ddfd8ccb6);
+        
+    
+            var icon_beb8e34e0811c672c107083bfd156d8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7eecd5b4ffea01df731f7b776644d9b9.setIcon(icon_beb8e34e0811c672c107083bfd156d8d);
+        
+    
+        var popup_a1c375cbd2e31b653e272d8887242e70 = L.popup({"maxWidth": 3000});
+
+        
+            var html_908018dd315b032d5309b68fe5eadeb3 = $(`<div id="html_908018dd315b032d5309b68fe5eadeb3" style="width: 360.0px; height: 100.0%;">                                             7月20日11:00左右</br>                                             兰州市七里河区华林坪三马路裁缝店、华林坪一马路“浙景隆超市”</br>                                             </div>`)[0];
+            popup_a1c375cbd2e31b653e272d8887242e70.setContent(html_908018dd315b032d5309b68fe5eadeb3);
+        
+
+        marker_7eecd5b4ffea01df731f7b776644d9b9.bindPopup(popup_a1c375cbd2e31b653e272d8887242e70)
+        ;
+
+        
+    
+    
+            var marker_f038dcc654582e7ae7c8d035388dd690 = L.marker(
+                [36.06119939095865, 103.8076182417779],
+                {}
+            ).addTo(feature_group_1bfb3e1d977313a081c4607ddfd8ccb6);
+        
+    
+            var icon_df64d7596e73a942f5bd5b8f67efe5e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f038dcc654582e7ae7c8d035388dd690.setIcon(icon_df64d7596e73a942f5bd5b8f67efe5e0);
+        
+    
+        var popup_205ba553877e782b3359196b1cad8e0d = L.popup({"maxWidth": 3000});
+
+        
+            var html_7233c24654bffabd73c9d39c46ae32b6 = $(`<div id="html_7233c24654bffabd73c9d39c46ae32b6" style="width: 336.0px; height: 100.0%;">                                             7月20日12:31左右</br>                                             兰州市七里河区华坪菜市场“玉云调料店”、“豆家调料水产”</br>                                             </div>`)[0];
+            popup_205ba553877e782b3359196b1cad8e0d.setContent(html_7233c24654bffabd73c9d39c46ae32b6);
+        
+
+        marker_f038dcc654582e7ae7c8d035388dd690.bindPopup(popup_205ba553877e782b3359196b1cad8e0d)
+        ;
+
+        
+    
+    
+            var marker_6713c029a8d6287fad57dfc7cda42005 = L.marker(
+                [36.07173790875531, 103.78457697493864],
+                {}
+            ).addTo(feature_group_1bfb3e1d977313a081c4607ddfd8ccb6);
+        
+    
+            var icon_c8c286fc506331350f552b31e1a0c4bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6713c029a8d6287fad57dfc7cda42005.setIcon(icon_c8c286fc506331350f552b31e1a0c4bf);
+        
+    
+        var popup_db118c4c45e062d7b61bb9d6d7d5e026 = L.popup({"maxWidth": 3000});
+
+        
+            var html_a61b7ec3b92623bf9bfce880331bfcb7 = $(`<div id="html_a61b7ec3b92623bf9bfce880331bfcb7" style="width: 288.0px; height: 100.0%;">                                             7月20日14:00左右</br>                                             兰州市七里河区西津桥火电公司家属院旁边自建房230号</br>                                             </div>`)[0];
+            popup_db118c4c45e062d7b61bb9d6d7d5e026.setContent(html_a61b7ec3b92623bf9bfce880331bfcb7);
+        
+
+        marker_6713c029a8d6287fad57dfc7cda42005.bindPopup(popup_db118c4c45e062d7b61bb9d6d7d5e026)
+        ;
+
+        
+    
+    
+            var marker_5540c5e36c42882d0047508f96e746f0 = L.marker(
+                [36.05358014374482, 103.81220795412004],
+                {}
+            ).addTo(feature_group_1bfb3e1d977313a081c4607ddfd8ccb6);
+        
+    
+            var icon_0410de5bc65448111ee1cf75fef01e6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5540c5e36c42882d0047508f96e746f0.setIcon(icon_0410de5bc65448111ee1cf75fef01e6f);
+        
+    
+        var popup_5da17b17555db52c5659d9763e937b55 = L.popup({"maxWidth": 3000});
+
+        
+            var html_d98201d34fad9281d353b18ae4eb236d = $(`<div id="html_d98201d34fad9281d353b18ae4eb236d" style="width: 240.0px; height: 100.0%;">                                             7月20日14:00左右</br>                                             兰州市七里河区八里镇八里窑社区核酸采样点</br>                                             </div>`)[0];
+            popup_5da17b17555db52c5659d9763e937b55.setContent(html_d98201d34fad9281d353b18ae4eb236d);
+        
+
+        marker_5540c5e36c42882d0047508f96e746f0.bindPopup(popup_5da17b17555db52c5659d9763e937b55)
+        ;
+
+        
+    
+    
+            var marker_a144fb8c3e79ec06716782daad1820e8 = L.marker(
+                [36.07173790875531, 103.78457697493864],
+                {}
+            ).addTo(feature_group_1bfb3e1d977313a081c4607ddfd8ccb6);
+        
+    
+            var icon_32bb0b654f1ead0c439b8c8ba37f5b7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a144fb8c3e79ec06716782daad1820e8.setIcon(icon_32bb0b654f1ead0c439b8c8ba37f5b7e);
+        
+    
+        var popup_4aa3ac2bef0ee44e153ba35bf876dc62 = L.popup({"maxWidth": 3000});
+
+        
+            var html_d439838151a772b8b297a9c8f005206a = $(`<div id="html_d439838151a772b8b297a9c8f005206a" style="width: 228.0px; height: 100.0%;">                                             7月20日15:00左右</br>                                             兰州市七里河区火电公司家属院核酸采样点</br>                                             </div>`)[0];
+            popup_4aa3ac2bef0ee44e153ba35bf876dc62.setContent(html_d439838151a772b8b297a9c8f005206a);
+        
+
+        marker_a144fb8c3e79ec06716782daad1820e8.bindPopup(popup_4aa3ac2bef0ee44e153ba35bf876dc62)
+        ;
+
+        
+    
+    
+            var marker_c68c61fca9cbee0367b0f2758f11b696 = L.marker(
+                [36.05881986031682, 103.80971623429646],
+                {}
+            ).addTo(feature_group_1bfb3e1d977313a081c4607ddfd8ccb6);
+        
+    
+            var icon_e8fdc0d3664b699cf62ded77295c42cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c68c61fca9cbee0367b0f2758f11b696.setIcon(icon_e8fdc0d3664b699cf62ded77295c42cb);
+        
+    
+        var popup_93b991cf1eb543ab803539ae6ca0a5a8 = L.popup({"maxWidth": 3000});
+
+        
+            var html_097b232f3cd8a988d62afa9a8ff175fb = $(`<div id="html_097b232f3cd8a988d62afa9a8ff175fb" style="width: 228.0px; height: 100.0%;">                                             7月20日17:00左右</br>                                             兰州市七里河区华林坪第一小学核酸采样点</br>                                             </div>`)[0];
+            popup_93b991cf1eb543ab803539ae6ca0a5a8.setContent(html_097b232f3cd8a988d62afa9a8ff175fb);
+        
+
+        marker_c68c61fca9cbee0367b0f2758f11b696.bindPopup(popup_93b991cf1eb543ab803539ae6ca0a5a8)
+        ;
+
+        
+    
+    
+            var marker_c872a826ef3287ce7a888ddb34a258d0 = L.marker(
+                [36.06200589984603, 103.80703937370728],
+                {}
+            ).addTo(feature_group_1bfb3e1d977313a081c4607ddfd8ccb6);
+        
+    
+            var icon_30c41f1000971146341873f7a827a7ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c872a826ef3287ce7a888ddb34a258d0.setIcon(icon_30c41f1000971146341873f7a827a7ce);
+        
+    
+        var popup_4777d8b1ee64c1982ef9e9005a9bf563 = L.popup({"maxWidth": 3000});
+
+        
+            var html_195733660d2bb37e71ac1a8a083c268b = $(`<div id="html_195733660d2bb37e71ac1a8a083c268b" style="width: 240.0px; height: 100.0%;">                                             7月20日18:00左右</br>                                             兰州市七里河区华林坪三马路“宁惠乐超市”</br>                                             </div>`)[0];
+            popup_4777d8b1ee64c1982ef9e9005a9bf563.setContent(html_195733660d2bb37e71ac1a8a083c268b);
+        
+
+        marker_c872a826ef3287ce7a888ddb34a258d0.bindPopup(popup_4777d8b1ee64c1982ef9e9005a9bf563)
+        ;
+
+        
+    
+    
+            var marker_f8f767e7164140f6229d93dc4b22dc19 = L.marker(
+                [36.041088021968896, 103.8145006094426],
+                {}
+            ).addTo(feature_group_1bfb3e1d977313a081c4607ddfd8ccb6);
+        
+    
+            var icon_d03e817d8a1fb8812f9059c6fd864459 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f8f767e7164140f6229d93dc4b22dc19.setIcon(icon_d03e817d8a1fb8812f9059c6fd864459);
+        
+    
+        var popup_681722515ec50bc022a1a16d88100580 = L.popup({"maxWidth": 3000});
+
+        
+            var html_ef1292e5edc7f91046f49e4a9b13ef1c = $(`<div id="html_ef1292e5edc7f91046f49e4a9b13ef1c" style="width: 168.0px; height: 100.0%;">                                             7月20日18:11</br>                                             兰州市七里河区马艾米儿小吃店</br>                                             </div>`)[0];
+            popup_681722515ec50bc022a1a16d88100580.setContent(html_ef1292e5edc7f91046f49e4a9b13ef1c);
+        
+
+        marker_f8f767e7164140f6229d93dc4b22dc19.bindPopup(popup_681722515ec50bc022a1a16d88100580)
+        ;
+
+        
+    
+    
+            var marker_026283ec36891b1a831011db5996ff8f = L.marker(
+                [36.05593904453156, 103.80745430102232],
+                {}
+            ).addTo(feature_group_1bfb3e1d977313a081c4607ddfd8ccb6);
+        
+    
+            var icon_d2eec9145472120b000cfda1a00b7145 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_026283ec36891b1a831011db5996ff8f.setIcon(icon_d2eec9145472120b000cfda1a00b7145);
+        
+    
+        var popup_b68e905e1aaab10e7921bcf6e2d0197e = L.popup({"maxWidth": 3000});
+
+        
+            var html_1e9c69a59d07ed570cf7287e8548b7d1 = $(`<div id="html_1e9c69a59d07ed570cf7287e8548b7d1" style="width: 180.0px; height: 100.0%;">                                             7月20日18:13</br>                                             兰州市七里河区华林坪希兰面条店</br>                                             </div>`)[0];
+            popup_b68e905e1aaab10e7921bcf6e2d0197e.setContent(html_1e9c69a59d07ed570cf7287e8548b7d1);
+        
+
+        marker_026283ec36891b1a831011db5996ff8f.bindPopup(popup_b68e905e1aaab10e7921bcf6e2d0197e)
+        ;
+
+        
+    
+    
+            var feature_group_24adabc7260b6b7108d52282c3a97284 = L.featureGroup(
+                {}
+            ).addTo(map_209c2028745cbd48c1bac4a2333ca450);
+        
+    
+            var poly_line_8671a4c0f245dca59118df3666d6dfe8 = L.polyline(
+                [[36.077980890540125, 103.74215997689352], [36.06847546214188, 103.79018140510009], [36.06200589984603, 103.80703937370728]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_24adabc7260b6b7108d52282c3a97284);
+        
+    
+            var poly_line_4fbd8ab0a63bc26dd16819715d9d2834 = L.polyline(
+                [[36.077980890540125, 103.74215997689352], [36.06847546214188, 103.79018140510009], [36.06200589984603, 103.80703937370728]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_24adabc7260b6b7108d52282c3a97284);
+        
+    
+            var marker_fdbf9aee79f5af6b827213994753d20b = L.marker(
+                [36.077980890540125, 103.74215997689352],
+                {}
+            ).addTo(feature_group_24adabc7260b6b7108d52282c3a97284);
+        
+    
+            var icon_83c8e5ae046abfd4119a38275d4f883b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fdbf9aee79f5af6b827213994753d20b.setIcon(icon_83c8e5ae046abfd4119a38275d4f883b);
+        
+    
+        var popup_ce6feaf956a6ed4bf5907a45bc879e43 = L.popup({"maxWidth": 3000});
+
+        
+            var html_532905a589b78ddee475f553f209e9f2 = $(`<div id="html_532905a589b78ddee475f553f209e9f2" style="width: 276.0px; height: 100.0%;">                                             7月21日09:00左右</br>                                             兰州市七里河区怡宁嘉苑东区小区停车场蔬菜供应点</br>                                             </div>`)[0];
+            popup_ce6feaf956a6ed4bf5907a45bc879e43.setContent(html_532905a589b78ddee475f553f209e9f2);
+        
+
+        marker_fdbf9aee79f5af6b827213994753d20b.bindPopup(popup_ce6feaf956a6ed4bf5907a45bc879e43)
+        ;
+
+        
+    
+    
+            var marker_5be28995936ffc62134a4e90fb5aa0af = L.marker(
+                [36.06847546214188, 103.79018140510009],
+                {}
+            ).addTo(feature_group_24adabc7260b6b7108d52282c3a97284);
+        
+    
+            var icon_deaa9f2e9e9bb52ba44cd3494b78738f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5be28995936ffc62134a4e90fb5aa0af.setIcon(icon_deaa9f2e9e9bb52ba44cd3494b78738f);
+        
+    
+        var popup_00380f8666eabdf29db68829f76c0b18 = L.popup({"maxWidth": 3000});
+
+        
+            var html_80e796e9244ab63004d6bd0814241f06 = $(`<div id="html_80e796e9244ab63004d6bd0814241f06" style="width: 252.0px; height: 100.0%;">                                             7月21日15:30左右</br>                                             兰州市七里河区小西湖民族金街“陇之情便利店</br>                                             </div>`)[0];
+            popup_00380f8666eabdf29db68829f76c0b18.setContent(html_80e796e9244ab63004d6bd0814241f06);
+        
+
+        marker_5be28995936ffc62134a4e90fb5aa0af.bindPopup(popup_00380f8666eabdf29db68829f76c0b18)
+        ;
+
+        
+    
+    
+            var marker_f80a60fbef0e14b99aafee325bae752c = L.marker(
+                [36.06200589984603, 103.80703937370728],
+                {}
+            ).addTo(feature_group_24adabc7260b6b7108d52282c3a97284);
+        
+    
+            var icon_07ac5ab7556c21c17d922529c5aca9e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f80a60fbef0e14b99aafee325bae752c.setIcon(icon_07ac5ab7556c21c17d922529c5aca9e1);
+        
+    
+        var popup_2f23ca4e3a30b3d691c68c2cb39fd984 = L.popup({"maxWidth": 3000});
+
+        
+            var html_f696f636ad857ce19ec53441c227a23d = $(`<div id="html_f696f636ad857ce19ec53441c227a23d" style="width: 240.0px; height: 100.0%;">                                             7月21日18:00左右</br>                                             兰州市七里河区华林坪一马路路口核酸采样点</br>                                             </div>`)[0];
+            popup_2f23ca4e3a30b3d691c68c2cb39fd984.setContent(html_f696f636ad857ce19ec53441c227a23d);
+        
+
+        marker_f80a60fbef0e14b99aafee325bae752c.bindPopup(popup_2f23ca4e3a30b3d691c68c2cb39fd984)
+        ;
+
+        
+    
+    
+            var feature_group_0e3bf6ac63fd122babb2c7c6d1b496eb = L.featureGroup(
+                {}
+            ).addTo(map_209c2028745cbd48c1bac4a2333ca450);
+        
+    
+            var poly_line_e95df3a354fd213b3da52af1852e42d2 = L.polyline(
+                [[36.06200589984603, 103.80703937370728]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0e3bf6ac63fd122babb2c7c6d1b496eb);
+        
+    
+            var poly_line_9a3aa552ba99f51e1cdb2730ab12d81e = L.polyline(
+                [[36.06200589984603, 103.80703937370728]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_0e3bf6ac63fd122babb2c7c6d1b496eb);
+        
+    
+            var marker_7adaed507169cff0aa68631a28c6220d = L.marker(
+                [36.06200589984603, 103.80703937370728],
+                {}
+            ).addTo(feature_group_0e3bf6ac63fd122babb2c7c6d1b496eb);
+        
+    
+            var icon_fc240520170d52ad67928c05aeb9df37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_7adaed507169cff0aa68631a28c6220d.setIcon(icon_fc240520170d52ad67928c05aeb9df37);
+        
+    
+        var popup_625b8945477bf8890da00d7e78724df5 = L.popup({"maxWidth": 3000});
+
+        
+            var html_6bfb8a3d0fcc86adc17a8f6240bbc53e = $(`<div id="html_6bfb8a3d0fcc86adc17a8f6240bbc53e" style="width: 240.0px; height: 100.0%;">                                             7月22日16:00左右</br>                                             兰州市七里河区华林坪一马路路口核酸采样点</br>                                             </div>`)[0];
+            popup_625b8945477bf8890da00d7e78724df5.setContent(html_6bfb8a3d0fcc86adc17a8f6240bbc53e);
+        
+
+        marker_7adaed507169cff0aa68631a28c6220d.bindPopup(popup_625b8945477bf8890da00d7e78724df5)
+        ;
+
+        
+    
+    
+            var layer_control_b56e873d9610e63991faec2e21899203 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_1209eada16fb3c141a466ba05fc2b019,
+                },
+                overlays :  {
+                    "7\u670818\u65e5" : feature_group_6e42b19bc86681852964f305cffe14ca,
+                    "7\u670819\u65e5" : feature_group_ca0b4b0601c21f4b852b06077e0a70de,
+                    "7\u670820\u65e5" : feature_group_1bfb3e1d977313a081c4607ddfd8ccb6,
+                    "7\u670821\u65e5" : feature_group_24adabc7260b6b7108d52282c3a97284,
+                    "7\u670822\u65e5" : feature_group_0e3bf6ac63fd122babb2c7c6d1b496eb,
+                },
+            };
+            L.control.layers(
+                layer_control_b56e873d9610e63991faec2e21899203.base_layers,
+                layer_control_b56e873d9610e63991faec2e21899203.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_209c2028745cbd48c1bac4a2333ca450);
+        
+    
+                var lat_lng_popup_642f19560eb68d0b33cfe7fea1d81531 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_642f19560eb68d0b33cfe7fea1d81531
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_209c2028745cbd48c1bac4a2333ca450);
+                    }
+                map_209c2028745cbd48c1bac4a2333ca450.on('click', latLngPop);
+            
+</script>
+<script src="shuiyin.js"></script>
+
+    <script type="text/javascript">
+
+    var now = getNow();
+
+    watermark({"watermark_txt":"兰州大学离散算法团队"+now});
+
+    </script>

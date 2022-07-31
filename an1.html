@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f9d54b916bd38b6ba7ea8326fefbbe7b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+                     <h3 align="center" style="font-size:16px"><b>兰州市安宁区近14日需自主报备场所</b></h3>
+                     
+    
+            <div class="folium-map" id="map_f9d54b916bd38b6ba7ea8326fefbbe7b" ></div>
+        
+</body>
+<script>    
+    
+            var map_f9d54b916bd38b6ba7ea8326fefbbe7b = L.map(
+                "map_f9d54b916bd38b6ba7ea8326fefbbe7b",
+                {
+                    center: [36.06944986682877, 103.72287659149411],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_57359299b6cb2bd5adc573e3be486e7f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f9d54b916bd38b6ba7ea8326fefbbe7b);
+        
+    
+            var feature_group_cb3a9408cc482062c2194bd9cc5faf14 = L.featureGroup(
+                {}
+            ).addTo(map_f9d54b916bd38b6ba7ea8326fefbbe7b);
+        
+    
+            var poly_line_c3d1ddd72d57e8f84356414719c8e6e4 = L.polyline(
+                [[36.06944986682877, 103.72287659149411], [36.11253220795396, 103.69935410239316], [36.10975375497273, 103.72553503682038], [36.06944986682877, 103.72287659149411]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_cb3a9408cc482062c2194bd9cc5faf14);
+        
+    
+            var poly_line_4ceb80e6790bde713716146cc2b184e3 = L.polyline(
+                [[36.06944986682877, 103.72287659149411], [36.11253220795396, 103.69935410239316], [36.10975375497273, 103.72553503682038], [36.06944986682877, 103.72287659149411]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_cb3a9408cc482062c2194bd9cc5faf14);
+        
+    
+            var marker_57a682d1049e914a72d550ca4e36fc57 = L.marker(
+                [36.06944986682877, 103.72287659149411],
+                {}
+            ).addTo(feature_group_cb3a9408cc482062c2194bd9cc5faf14);
+        
+    
+            var icon_64442d49a88aee270898c68144f7a17a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_57a682d1049e914a72d550ca4e36fc57.setIcon(icon_64442d49a88aee270898c68144f7a17a);
+        
+    
+        var popup_e55ab991a73df42d06a1d82a742cc0ed = L.popup({"maxWidth": 3000});
+
+        
+            var html_13d2dcf7cc12deb448e0b80ae77cc4fd = $(`<div id="html_13d2dcf7cc12deb448e0b80ae77cc4fd" style="width: 276.0px; height: 100.0%;">                                             7月18日5:00左右</br>                                             兰州市安宁区彭家坪恒大翡翠华庭菜市场（鸽子市）</br>                                             </div>`)[0];
+            popup_e55ab991a73df42d06a1d82a742cc0ed.setContent(html_13d2dcf7cc12deb448e0b80ae77cc4fd);
+        
+
+        marker_57a682d1049e914a72d550ca4e36fc57.bindPopup(popup_e55ab991a73df42d06a1d82a742cc0ed)
+        ;
+
+        
+    
+    
+            var marker_db8ceff41e4ea957a44e935a06a1a5e1 = L.marker(
+                [36.11253220795396, 103.69935410239316],
+                {}
+            ).addTo(feature_group_cb3a9408cc482062c2194bd9cc5faf14);
+        
+    
+            var icon_60d5c2a3acb2bd1af8d1b88d12eb8d0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_db8ceff41e4ea957a44e935a06a1a5e1.setIcon(icon_60d5c2a3acb2bd1af8d1b88d12eb8d0a);
+        
+    
+        var popup_9609ee06423085913b130f52b0807994 = L.popup({"maxWidth": 3000});
+
+        
+            var html_59cf65829d4f1efd9877faf3cc3657f2 = $(`<div id="html_59cf65829d4f1efd9877faf3cc3657f2" style="width: 240.0px; height: 100.0%;">                                             7月18日07:00—21:00</br>                                             兰州市安宁区刘家堡安置小区门口尚言果蔬店</br>                                             </div>`)[0];
+            popup_9609ee06423085913b130f52b0807994.setContent(html_59cf65829d4f1efd9877faf3cc3657f2);
+        
+
+        marker_db8ceff41e4ea957a44e935a06a1a5e1.bindPopup(popup_9609ee06423085913b130f52b0807994)
+        ;
+
+        
+    
+    
+            var marker_6e1ddbfbc75f73af32c53ce8e182b984 = L.marker(
+                [36.10975375497273, 103.72553503682038],
+                {}
+            ).addTo(feature_group_cb3a9408cc482062c2194bd9cc5faf14);
+        
+    
+            var icon_b9aada17fe8f2b4ec1962df9795ebd14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6e1ddbfbc75f73af32c53ce8e182b984.setIcon(icon_b9aada17fe8f2b4ec1962df9795ebd14);
+        
+    
+        var popup_7e60f4f559881b36d17b01a18623d2ce = L.popup({"maxWidth": 3000});
+
+        
+            var html_5e5239a839d5b0d2be24d6607f819e9c = $(`<div id="html_5e5239a839d5b0d2be24d6607f819e9c" style="width: 168.0px; height: 100.0%;">                                             7月18日20:30左右</br>                                             兰州市安宁区兰石润安小区物业</br>                                             </div>`)[0];
+            popup_7e60f4f559881b36d17b01a18623d2ce.setContent(html_5e5239a839d5b0d2be24d6607f819e9c);
+        
+
+        marker_6e1ddbfbc75f73af32c53ce8e182b984.bindPopup(popup_7e60f4f559881b36d17b01a18623d2ce)
+        ;
+
+        
+    
+    
+            var marker_ed2050d72bfe15ed568f2464f039eb33 = L.marker(
+                [36.06944986682877, 103.72287659149411],
+                {}
+            ).addTo(feature_group_cb3a9408cc482062c2194bd9cc5faf14);
+        
+    
+            var icon_1b42430ef4fffe62fa97488df3cad1f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ed2050d72bfe15ed568f2464f039eb33.setIcon(icon_1b42430ef4fffe62fa97488df3cad1f7);
+        
+    
+        var popup_96f76873ff4d5ff335709bb50ce0cca3 = L.popup({"maxWidth": 3000});
+
+        
+            var html_b4ffcac750d4bd485b84773d9bb74de1 = $(`<div id="html_b4ffcac750d4bd485b84773d9bb74de1" style="width: 372.0px; height: 100.0%;">                                             7月18日21:00—23:00</br>                                             兰州市安宁区彭家坪恒大翡翠华庭菜市场（鸽子市）及市场核酸检测点</br>                                             </div>`)[0];
+            popup_96f76873ff4d5ff335709bb50ce0cca3.setContent(html_b4ffcac750d4bd485b84773d9bb74de1);
+        
+
+        marker_ed2050d72bfe15ed568f2464f039eb33.bindPopup(popup_96f76873ff4d5ff335709bb50ce0cca3)
+        ;
+
+        
+    
+    
+            var feature_group_867f85a2f37d6fd84d89fc1fe24faca6 = L.featureGroup(
+                {}
+            ).addTo(map_f9d54b916bd38b6ba7ea8326fefbbe7b);
+        
+    
+            var poly_line_a6d7654e256d6068f60f74c3292ef4cd = L.polyline(
+                [[36.06944986682877, 103.72287659149411], [36.10975375497273, 103.72553503682038]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_867f85a2f37d6fd84d89fc1fe24faca6);
+        
+    
+            var poly_line_41dc1c718bdff6a4f48fab393ecdb0e5 = L.polyline(
+                [[36.06944986682877, 103.72287659149411], [36.10975375497273, 103.72553503682038]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_867f85a2f37d6fd84d89fc1fe24faca6);
+        
+    
+            var marker_546cebcfd488e3b5d7b6ec9da99c5176 = L.marker(
+                [36.06944986682877, 103.72287659149411],
+                {}
+            ).addTo(feature_group_867f85a2f37d6fd84d89fc1fe24faca6);
+        
+    
+            var icon_0b8df3356754eceddbc189696be6b234 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_546cebcfd488e3b5d7b6ec9da99c5176.setIcon(icon_0b8df3356754eceddbc189696be6b234);
+        
+    
+        var popup_c52d44ce2bd183d62143b9488ba61d93 = L.popup({"maxWidth": 3000});
+
+        
+            var html_0100108aa7bb1bd389ca9a2dfd9726b3 = $(`<div id="html_0100108aa7bb1bd389ca9a2dfd9726b3" style="width: 372.0px; height: 100.0%;">                                             7月19日5:00左右</br>                                             兰州市安宁区彭家坪恒大翡翠华庭菜市场（鸽子市）及市场核酸检测点</br>                                             </div>`)[0];
+            popup_c52d44ce2bd183d62143b9488ba61d93.setContent(html_0100108aa7bb1bd389ca9a2dfd9726b3);
+        
+
+        marker_546cebcfd488e3b5d7b6ec9da99c5176.bindPopup(popup_c52d44ce2bd183d62143b9488ba61d93)
+        ;
+
+        
+    
+    
+            var marker_9ac3817fee16d237ca26b926872403a8 = L.marker(
+                [36.10975375497273, 103.72553503682038],
+                {}
+            ).addTo(feature_group_867f85a2f37d6fd84d89fc1fe24faca6);
+        
+    
+            var icon_8a7c2f5c0686f258e7ee57bb3e43ee5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_9ac3817fee16d237ca26b926872403a8.setIcon(icon_8a7c2f5c0686f258e7ee57bb3e43ee5f);
+        
+    
+        var popup_80b2b7c177672f1002b42c6c0a936a7f = L.popup({"maxWidth": 3000});
+
+        
+            var html_1f67d6bac79be800188a4fd756acb46f = $(`<div id="html_1f67d6bac79be800188a4fd756acb46f" style="width: 156.0px; height: 100.0%;">                                             7月19日18:46左右</br>                                             兰州市安宁区海关站内便利店</br>                                             </div>`)[0];
+            popup_80b2b7c177672f1002b42c6c0a936a7f.setContent(html_1f67d6bac79be800188a4fd756acb46f);
+        
+
+        marker_9ac3817fee16d237ca26b926872403a8.bindPopup(popup_80b2b7c177672f1002b42c6c0a936a7f)
+        ;
+
+        
+    
+    
+            var feature_group_e4edebb34ff608050fc76cc3de092946 = L.featureGroup(
+                {}
+            ).addTo(map_f9d54b916bd38b6ba7ea8326fefbbe7b);
+        
+    
+            var poly_line_f99d75fa1ddf49cbb1e43fd219ad4c76 = L.polyline(
+                [[36.116729877724566, 103.70551297480011], [36.09740237672696, 103.71357571590492], [36.09714771031894, 103.71614451034124]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e4edebb34ff608050fc76cc3de092946);
+        
+    
+            var poly_line_16f5baedda1601cfa01d24c15e6c1f5b = L.polyline(
+                [[36.116729877724566, 103.70551297480011], [36.09740237672696, 103.71357571590492], [36.09714771031894, 103.71614451034124]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_e4edebb34ff608050fc76cc3de092946);
+        
+    
+            var marker_d54596c6786606df95e8d6c85e0d2783 = L.marker(
+                [36.116729877724566, 103.70551297480011],
+                {}
+            ).addTo(feature_group_e4edebb34ff608050fc76cc3de092946);
+        
+    
+            var icon_308871624e33c9bb171d457b67264d64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d54596c6786606df95e8d6c85e0d2783.setIcon(icon_308871624e33c9bb171d457b67264d64);
+        
+    
+        var popup_a5609be7b35ea05f04daa5d456f1d5cb = L.popup({"maxWidth": 3000});
+
+        
+            var html_5e7482704afddc8190f2329dbd23142d = $(`<div id="html_5e7482704afddc8190f2329dbd23142d" style="width: 252.0px; height: 100.0%;">                                             7月20日8:25左右</br>                                             兰州市安宁区众友健康药店167分店（阳光怡园）</br>                                             </div>`)[0];
+            popup_a5609be7b35ea05f04daa5d456f1d5cb.setContent(html_5e7482704afddc8190f2329dbd23142d);
+        
+
+        marker_d54596c6786606df95e8d6c85e0d2783.bindPopup(popup_a5609be7b35ea05f04daa5d456f1d5cb)
+        ;
+
+        
+    
+    
+            var marker_a5a6636b8ea26031c9c9ec7fc0df3f9a = L.marker(
+                [36.09740237672696, 103.71357571590492],
+                {}
+            ).addTo(feature_group_e4edebb34ff608050fc76cc3de092946);
+        
+    
+            var icon_9bfaa2b2e303c48aa3d6b93b94078713 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a5a6636b8ea26031c9c9ec7fc0df3f9a.setIcon(icon_9bfaa2b2e303c48aa3d6b93b94078713);
+        
+    
+        var popup_18de20d0c6825eb566dc72e082f3e824 = L.popup({"maxWidth": 3000});
+
+        
+            var html_8bb8e51b86d06ca10c2e30e1bf9ccb69 = $(`<div id="html_8bb8e51b86d06ca10c2e30e1bf9ccb69" style="width: 204.0px; height: 100.0%;">                                             7月20日8:35左右</br>                                             兰州市安宁区正大优鲜兰州银滩雅苑店</br>                                             </div>`)[0];
+            popup_18de20d0c6825eb566dc72e082f3e824.setContent(html_8bb8e51b86d06ca10c2e30e1bf9ccb69);
+        
+
+        marker_a5a6636b8ea26031c9c9ec7fc0df3f9a.bindPopup(popup_18de20d0c6825eb566dc72e082f3e824)
+        ;
+
+        
+    
+    
+            var marker_b5b84bca66b76a5c789dadf95121073d = L.marker(
+                [36.09714771031894, 103.71614451034124],
+                {}
+            ).addTo(feature_group_e4edebb34ff608050fc76cc3de092946);
+        
+    
+            var icon_8d41d2428ddfbfee70b13dfd06be2b9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b5b84bca66b76a5c789dadf95121073d.setIcon(icon_8d41d2428ddfbfee70b13dfd06be2b9c);
+        
+    
+        var popup_a9fda519890a0b6454cc0b000cb7affe = L.popup({"maxWidth": 3000});
+
+        
+            var html_753b4e9901ab8b0ddd9df0901169fa57 = $(`<div id="html_753b4e9901ab8b0ddd9df0901169fa57" style="width: 204.0px; height: 100.0%;">                                             7月20日16:00左右</br>                                             兰州市安宁区阳光怡园小区核酸检测点</br>                                             </div>`)[0];
+            popup_a9fda519890a0b6454cc0b000cb7affe.setContent(html_753b4e9901ab8b0ddd9df0901169fa57);
+        
+
+        marker_b5b84bca66b76a5c789dadf95121073d.bindPopup(popup_a9fda519890a0b6454cc0b000cb7affe)
+        ;
+
+        
+    
+    
+            var feature_group_f8c13dc1a4f2b8e3bff4a84f05ce60de = L.featureGroup(
+                {}
+            ).addTo(map_f9d54b916bd38b6ba7ea8326fefbbe7b);
+        
+    
+            var poly_line_01cdaa7075183bf8a8779fba2f7e1ec9 = L.polyline(
+                [[36.09714771031894, 103.71614451034124]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f8c13dc1a4f2b8e3bff4a84f05ce60de);
+        
+    
+            var poly_line_113958ac21dae5879bbdb965eb41d54d = L.polyline(
+                [[36.09714771031894, 103.71614451034124]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_f8c13dc1a4f2b8e3bff4a84f05ce60de);
+        
+    
+            var marker_28b7e5d54ef87c36d9fdf9113ba1e38e = L.marker(
+                [36.09714771031894, 103.71614451034124],
+                {}
+            ).addTo(feature_group_f8c13dc1a4f2b8e3bff4a84f05ce60de);
+        
+    
+            var icon_8e69ab54c27392f230022e393ca77b6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_28b7e5d54ef87c36d9fdf9113ba1e38e.setIcon(icon_8e69ab54c27392f230022e393ca77b6d);
+        
+    
+        var popup_5938286c2baa9786960a7037ef30361d = L.popup({"maxWidth": 3000});
+
+        
+            var html_35a4e1e9cbf2a8c3c9aabdc728008774 = $(`<div id="html_35a4e1e9cbf2a8c3c9aabdc728008774" style="width: 204.0px; height: 100.0%;">                                             7月21日16:00左右</br>                                             兰州市安宁区阳光怡园小区核酸检测点</br>                                             </div>`)[0];
+            popup_5938286c2baa9786960a7037ef30361d.setContent(html_35a4e1e9cbf2a8c3c9aabdc728008774);
+        
+
+        marker_28b7e5d54ef87c36d9fdf9113ba1e38e.bindPopup(popup_5938286c2baa9786960a7037ef30361d)
+        ;
+
+        
+    
+    
+            var layer_control_94349b41e6c7f9e5b72038175b326bae = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_57359299b6cb2bd5adc573e3be486e7f,
+                },
+                overlays :  {
+                    "7\u670818\u65e5" : feature_group_cb3a9408cc482062c2194bd9cc5faf14,
+                    "7\u670819\u65e5" : feature_group_867f85a2f37d6fd84d89fc1fe24faca6,
+                    "7\u670820\u65e5" : feature_group_e4edebb34ff608050fc76cc3de092946,
+                    "7\u670821\u65e5" : feature_group_f8c13dc1a4f2b8e3bff4a84f05ce60de,
+                },
+            };
+            L.control.layers(
+                layer_control_94349b41e6c7f9e5b72038175b326bae.base_layers,
+                layer_control_94349b41e6c7f9e5b72038175b326bae.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_f9d54b916bd38b6ba7ea8326fefbbe7b);
+        
+    
+                var lat_lng_popup_d963c834a6339cffbb485b887a51f541 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_d963c834a6339cffbb485b887a51f541
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_f9d54b916bd38b6ba7ea8326fefbbe7b);
+                    }
+                map_f9d54b916bd38b6ba7ea8326fefbbe7b.on('click', latLngPop);
+            
+</script>
+<script src="shuiyin.js"></script>
+    <script type="text/javascript">
+    var now = getNow();
+    watermark({"watermark_txt":"兰州大学离散算法团队"+now});
+    </script>
