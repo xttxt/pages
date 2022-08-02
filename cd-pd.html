@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fd56dd0c267326bafcad6df14610e8ab {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+                     <h3 align="center" style="font-size:16px"><b>成都市郫都区近10日病例轨迹</b></h3>
+                     
+    
+            <div class="folium-map" id="map_fd56dd0c267326bafcad6df14610e8ab" ></div>
+        
+</body>
+<script>    
+    
+            var map_fd56dd0c267326bafcad6df14610e8ab = L.map(
+                "map_fd56dd0c267326bafcad6df14610e8ab",
+                {
+                    center: [30.81211064746231, 103.88632723157887],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_62439018b1ddde515e0211914f9ffb24 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fd56dd0c267326bafcad6df14610e8ab);
+        
+    
+            var feature_group_ba410df825299f141c514cd9a957af9e = L.featureGroup(
+                {}
+            ).addTo(map_fd56dd0c267326bafcad6df14610e8ab);
+        
+    
+            var poly_line_02f4179182726029182cc95584cb3918 = L.polyline(
+                [[30.81211064746231, 103.88632723157887], [30.819522925826757, 103.88820882230009], [30.813747868006494, 103.88506771742333]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ba410df825299f141c514cd9a957af9e);
+        
+    
+            var poly_line_febe562f67d38d861157e1f70199dd8d = L.polyline(
+                [[30.81211064746231, 103.88632723157887], [30.819522925826757, 103.88820882230009], [30.813747868006494, 103.88506771742333]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ba410df825299f141c514cd9a957af9e);
+        
+    
+            var marker_d47c2d1fd505e891fcecf7d24e927b62 = L.marker(
+                [30.81211064746231, 103.88632723157887],
+                {}
+            ).addTo(feature_group_ba410df825299f141c514cd9a957af9e);
+        
+    
+            var icon_2224fbcf8e9aa8b191aa0a5434c9068d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d47c2d1fd505e891fcecf7d24e927b62.setIcon(icon_2224fbcf8e9aa8b191aa0a5434c9068d);
+        
+    
+        var popup_5ec394c24c8cc5882603f7979801478b = L.popup({"maxWidth": 3000});
+
+        
+            var html_6a61280de2891c2b52e836efbf4b71de = $(`<div id="html_6a61280de2891c2b52e836efbf4b71de" style="width: 252.0px; height: 100.0%;">                                             7月25日13:14-14:00</br>                                             成都市郫都区兄弟茶馆（郫筒街道望丛6组41号）</br>                                             </div>`)[0];
+            popup_5ec394c24c8cc5882603f7979801478b.setContent(html_6a61280de2891c2b52e836efbf4b71de);
+        
+
+        marker_d47c2d1fd505e891fcecf7d24e927b62.bindPopup(popup_5ec394c24c8cc5882603f7979801478b)
+        ;
+
+        
+    
+    
+            var marker_04f8b91694e878b884b0c351f28e2c67 = L.marker(
+                [30.819522925826757, 103.88820882230009],
+                {}
+            ).addTo(feature_group_ba410df825299f141c514cd9a957af9e);
+        
+    
+            var icon_c4345f8f58ae546a2048d8751b6db595 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_04f8b91694e878b884b0c351f28e2c67.setIcon(icon_c4345f8f58ae546a2048d8751b6db595);
+        
+    
+        var popup_cb17bfd9d83ce0cdfb422bc1a7930ff7 = L.popup({"maxWidth": 3000});
+
+        
+            var html_9aa137ffbc4f7c6c229a26a0fa83415a = $(`<div id="html_9aa137ffbc4f7c6c229a26a0fa83415a" style="width: 272.0px; height: 100.0%;">                                             7月25日14:00-14:08</br>                                             成都市郫都区地铁6号线望丛祠站D出口外公共卫生间</br>                                             </div>`)[0];
+            popup_cb17bfd9d83ce0cdfb422bc1a7930ff7.setContent(html_9aa137ffbc4f7c6c229a26a0fa83415a);
+        
+
+        marker_04f8b91694e878b884b0c351f28e2c67.bindPopup(popup_cb17bfd9d83ce0cdfb422bc1a7930ff7)
+        ;
+
+        
+    
+    
+            var marker_dfda63499d09559abf068364ed2e154f = L.marker(
+                [30.813747868006494, 103.88506771742333],
+                {}
+            ).addTo(feature_group_ba410df825299f141c514cd9a957af9e);
+        
+    
+            var icon_dc88a796803f98fb129663b75047d53a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_dfda63499d09559abf068364ed2e154f.setIcon(icon_dc88a796803f98fb129663b75047d53a);
+        
+    
+        var popup_c052a6e52bba522a0f20b99e53367fdb = L.popup({"maxWidth": 3000});
+
+        
+            var html_120c0f00cb268e485cf387d04c32aaa7 = $(`<div id="html_120c0f00cb268e485cf387d04c32aaa7" style="width: 264.0px; height: 100.0%;">                                             7月25日14:08-14:39</br>                                             成都市郫都区麻辣豆花面（郫筒街道新南街314号）</br>                                             </div>`)[0];
+            popup_c052a6e52bba522a0f20b99e53367fdb.setContent(html_120c0f00cb268e485cf387d04c32aaa7);
+        
+
+        marker_dfda63499d09559abf068364ed2e154f.bindPopup(popup_c052a6e52bba522a0f20b99e53367fdb)
+        ;
+
+        
+    
+    
+            var layer_control_fbd6b5aa9ce11ddb1eeb16db0ae6987c = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_62439018b1ddde515e0211914f9ffb24,
+                },
+                overlays :  {
+                    "7\u670825\u65e5" : feature_group_ba410df825299f141c514cd9a957af9e,
+                },
+            };
+            L.control.layers(
+                layer_control_fbd6b5aa9ce11ddb1eeb16db0ae6987c.base_layers,
+                layer_control_fbd6b5aa9ce11ddb1eeb16db0ae6987c.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_fd56dd0c267326bafcad6df14610e8ab);
+        
+    
+                var lat_lng_popup_f830ee916f0a7bc42667c649b01c477f = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_f830ee916f0a7bc42667c649b01c477f
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_fd56dd0c267326bafcad6df14610e8ab);
+                    }
+                map_fd56dd0c267326bafcad6df14610e8ab.on('click', latLngPop);
+            
+</script>
+<script src="shuiyin.js"></script>
+    <script type="text/javascript">
+    var now = getNow();
+    watermark({"watermark_txt":"兰州大学离散算法团队"+now});
+    </script>

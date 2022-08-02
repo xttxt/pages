@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a26b53616204623200b92eaa90ad79ac {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+                     <h3 align="center" style="font-size:16px"><b>成都市青羊区近10日病例轨迹</b></h3>
+                     
+    
+            <div class="folium-map" id="map_a26b53616204623200b92eaa90ad79ac" ></div>
+        
+</body>
+<script>    
+    
+            var map_a26b53616204623200b92eaa90ad79ac = L.map(
+                "map_a26b53616204623200b92eaa90ad79ac",
+                {
+                    center: [30.6819488209628, 103.9813231290896],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ef4420130c328fcd3af5963f9d2bd2c4 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a26b53616204623200b92eaa90ad79ac);
+        
+    
+            var feature_group_6ca5d42a2729d02915117c918be4ee94 = L.featureGroup(
+                {}
+            ).addTo(map_a26b53616204623200b92eaa90ad79ac);
+        
+    
+            var poly_line_a8aa78a4d554881445e2de908dd2e3f2 = L.polyline(
+                [[30.6819488209628, 103.9813231290896]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6ca5d42a2729d02915117c918be4ee94);
+        
+    
+            var poly_line_bd1bd6fc3d59d4b60a710a7d3e0c74a5 = L.polyline(
+                [[30.6819488209628, 103.9813231290896]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_6ca5d42a2729d02915117c918be4ee94);
+        
+    
+            var marker_7024d526e9560baf7445c900ad74b632 = L.marker(
+                [30.6819488209628, 103.9813231290896],
+                {}
+            ).addTo(feature_group_6ca5d42a2729d02915117c918be4ee94);
+        
+    
+            var icon_044ab11789074caf8fcafccdf2809b05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7024d526e9560baf7445c900ad74b632.setIcon(icon_044ab11789074caf8fcafccdf2809b05);
+        
+    
+        var popup_1fda14acdf60cdc8c602c7e276aab4b9 = L.popup({"maxWidth": 3000});
+
+        
+            var html_fa0e760eaf835b853a20b011488562e8 = $(`<div id="html_fa0e760eaf835b853a20b011488562e8" style="width: 300.0px; height: 100.0%;">                                             7月22日15:00-15:15</br>                                             成都市青羊区万达广场（成都青羊店）负一楼步步高超市</br>                                             </div>`)[0];
+            popup_1fda14acdf60cdc8c602c7e276aab4b9.setContent(html_fa0e760eaf835b853a20b011488562e8);
+        
+
+        marker_7024d526e9560baf7445c900ad74b632.bindPopup(popup_1fda14acdf60cdc8c602c7e276aab4b9)
+        ;
+
+        
+    
+    
+            var feature_group_0021b8137ac2cf75d5445db5cba48cfd = L.featureGroup(
+                {}
+            ).addTo(map_a26b53616204623200b92eaa90ad79ac);
+        
+    
+            var poly_line_a0522eac88d5fe83155a43126b095a60 = L.polyline(
+                [[30.685191758088628, 103.99109309981613]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0021b8137ac2cf75d5445db5cba48cfd);
+        
+    
+            var poly_line_9ee3adac85e7741febd6d53841e7f73c = L.polyline(
+                [[30.685191758088628, 103.99109309981613]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_0021b8137ac2cf75d5445db5cba48cfd);
+        
+    
+            var marker_6036e76f01f4ae484fa2646c07d9065f = L.marker(
+                [30.685191758088628, 103.99109309981613],
+                {}
+            ).addTo(feature_group_0021b8137ac2cf75d5445db5cba48cfd);
+        
+    
+            var icon_e847c28c88a46a96a3000dfacc46ae60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6036e76f01f4ae484fa2646c07d9065f.setIcon(icon_e847c28c88a46a96a3000dfacc46ae60);
+        
+    
+        var popup_3b20ef6561ad40175e3276aefde4e44e = L.popup({"maxWidth": 3000});
+
+        
+            var html_247070213953d9c9f63fcc5aa93f3b3b = $(`<div id="html_247070213953d9c9f63fcc5aa93f3b3b" style="width: 264.0px; height: 100.0%;">                                             7月25日8:00-21:48
+ 7月26日8:56-22:08
+ 7月27日8:54-22:10</br>                                             成都市青羊区御术华医推拿连锁店（金福路416号）</br>                                             </div>`)[0];
+            popup_3b20ef6561ad40175e3276aefde4e44e.setContent(html_247070213953d9c9f63fcc5aa93f3b3b);
+        
+
+        marker_6036e76f01f4ae484fa2646c07d9065f.bindPopup(popup_3b20ef6561ad40175e3276aefde4e44e)
+        ;
+
+        
+    
+    
+            var feature_group_d64f4a3dc2708c5a991b25c8ad01ad1e = L.featureGroup(
+                {}
+            ).addTo(map_a26b53616204623200b92eaa90ad79ac);
+        
+    
+            var poly_line_8101170a501a1a096273c21993c9f928 = L.polyline(
+                [[30.685145483321147, 103.99222631221694], [30.684722720356312, 103.99226233426788]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d64f4a3dc2708c5a991b25c8ad01ad1e);
+        
+    
+            var poly_line_e74cb79d590aace41caf7288c6705d28 = L.polyline(
+                [[30.685145483321147, 103.99222631221694], [30.684722720356312, 103.99226233426788]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_d64f4a3dc2708c5a991b25c8ad01ad1e);
+        
+    
+            var marker_1623c140fca6b0cba9b48775ecf8ec1e = L.marker(
+                [30.685145483321147, 103.99222631221694],
+                {}
+            ).addTo(feature_group_d64f4a3dc2708c5a991b25c8ad01ad1e);
+        
+    
+            var icon_dae6f944ee7be82e2c8b53ff396445f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_1623c140fca6b0cba9b48775ecf8ec1e.setIcon(icon_dae6f944ee7be82e2c8b53ff396445f7);
+        
+    
+        var popup_459fee8b8f50d093270a19bbd6366ed3 = L.popup({"maxWidth": 3000});
+
+        
+            var html_e6e8e36978ec6501bebaba8af9c4d64a = $(`<div id="html_e6e8e36978ec6501bebaba8af9c4d64a" style="width: 180.0px; height: 100.0%;">                                             7月26日8:53-8:55</br>                                             成都市青羊区众晨包点（苏坡店）</br>                                             </div>`)[0];
+            popup_459fee8b8f50d093270a19bbd6366ed3.setContent(html_e6e8e36978ec6501bebaba8af9c4d64a);
+        
+
+        marker_1623c140fca6b0cba9b48775ecf8ec1e.bindPopup(popup_459fee8b8f50d093270a19bbd6366ed3)
+        ;
+
+        
+    
+    
+            var marker_b51b2b6ac607fa27b3e9d506c3771465 = L.marker(
+                [30.684722720356312, 103.99226233426788],
+                {}
+            ).addTo(feature_group_d64f4a3dc2708c5a991b25c8ad01ad1e);
+        
+    
+            var icon_46211ad14a59dbae076e1c289e8244aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_b51b2b6ac607fa27b3e9d506c3771465.setIcon(icon_46211ad14a59dbae076e1c289e8244aa);
+        
+    
+        var popup_d4751a60a6a47e023ddb89969d68b071 = L.popup({"maxWidth": 3000});
+
+        
+            var html_b8c9afcc44ba424436b7425c6ca087cf = $(`<div id="html_b8c9afcc44ba424436b7425c6ca087cf" style="width: 192.0px; height: 100.0%;">                                             7月26日9:22-9:30
+ 7月27日11:22-11:30</br>                                             成都市青羊区钱大妈（清波社区店）</br>                                             </div>`)[0];
+            popup_d4751a60a6a47e023ddb89969d68b071.setContent(html_b8c9afcc44ba424436b7425c6ca087cf);
+        
+
+        marker_b51b2b6ac607fa27b3e9d506c3771465.bindPopup(popup_d4751a60a6a47e023ddb89969d68b071)
+        ;
+
+        
+    
+    
+            var feature_group_b0a9f28c87870a5940e8c6cb23af6a9a = L.featureGroup(
+                {}
+            ).addTo(map_a26b53616204623200b92eaa90ad79ac);
+        
+    
+            var poly_line_7310eb0479dd0f0dc7ff276ac96d7fbe = L.polyline(
+                [[30.684958365324903, 103.9925612903416], [30.685168310138785, 103.99217681558336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_b0a9f28c87870a5940e8c6cb23af6a9a);
+        
+    
+            var poly_line_9eb4345e99937a15d494e5d07663ec4b = L.polyline(
+                [[30.684958365324903, 103.9925612903416], [30.685168310138785, 103.99217681558336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b0a9f28c87870a5940e8c6cb23af6a9a);
+        
+    
+            var marker_5588d9d6bdf0bc64ba95cdf27441f144 = L.marker(
+                [30.684958365324903, 103.9925612903416],
+                {}
+            ).addTo(feature_group_b0a9f28c87870a5940e8c6cb23af6a9a);
+        
+    
+            var icon_b27c5805ab0f6dd71cdccac54416925c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_5588d9d6bdf0bc64ba95cdf27441f144.setIcon(icon_b27c5805ab0f6dd71cdccac54416925c);
+        
+    
+        var popup_9b8fe74a6c67084e5285d4682bd2e765 = L.popup({"maxWidth": 3000});
+
+        
+            var html_e95c17c8ab2735b0a70d1c787565218d = $(`<div id="html_e95c17c8ab2735b0a70d1c787565218d" style="width: 156.0px; height: 100.0%;">                                             7月27日8:52-8:54</br>                                             成都市青羊区金福路326号肉铺</br>                                             </div>`)[0];
+            popup_9b8fe74a6c67084e5285d4682bd2e765.setContent(html_e95c17c8ab2735b0a70d1c787565218d);
+        
+
+        marker_5588d9d6bdf0bc64ba95cdf27441f144.bindPopup(popup_9b8fe74a6c67084e5285d4682bd2e765)
+        ;
+
+        
+    
+    
+            var marker_7d392f2a8a51fdf5915e192e4e11bc2a = L.marker(
+                [30.685168310138785, 103.99217681558336],
+                {}
+            ).addTo(feature_group_b0a9f28c87870a5940e8c6cb23af6a9a);
+        
+    
+            var icon_e4fc959d839fbad336692ec26e6d938c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_7d392f2a8a51fdf5915e192e4e11bc2a.setIcon(icon_e4fc959d839fbad336692ec26e6d938c);
+        
+    
+        var popup_33da888ca32b09f50e6e9532c6f84c8b = L.popup({"maxWidth": 3000});
+
+        
+            var html_c1735737a202d068d24bf68e2ae0557b = $(`<div id="html_c1735737a202d068d24bf68e2ae0557b" style="width: 228.0px; height: 100.0%;">                                             7月27日11:25-11:30</br>                                             成都市青羊区张记乐山甜皮鸭（金福路店）</br>                                             </div>`)[0];
+            popup_33da888ca32b09f50e6e9532c6f84c8b.setContent(html_c1735737a202d068d24bf68e2ae0557b);
+        
+
+        marker_7d392f2a8a51fdf5915e192e4e11bc2a.bindPopup(popup_33da888ca32b09f50e6e9532c6f84c8b)
+        ;
+
+        
+    
+    
+            var layer_control_be9fabbef332923f979a68a8b545d878 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_ef4420130c328fcd3af5963f9d2bd2c4,
+                },
+                overlays :  {
+                    "7\u670822\u65e5" : feature_group_6ca5d42a2729d02915117c918be4ee94,
+                    "7\u670825\u65e5" : feature_group_0021b8137ac2cf75d5445db5cba48cfd,
+                    "7\u670826\u65e5" : feature_group_d64f4a3dc2708c5a991b25c8ad01ad1e,
+                    "7\u670827\u65e5" : feature_group_b0a9f28c87870a5940e8c6cb23af6a9a,
+                },
+            };
+            L.control.layers(
+                layer_control_be9fabbef332923f979a68a8b545d878.base_layers,
+                layer_control_be9fabbef332923f979a68a8b545d878.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_a26b53616204623200b92eaa90ad79ac);
+        
+    
+                var lat_lng_popup_37299c6d11d64912e415f5b9cc73d130 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_37299c6d11d64912e415f5b9cc73d130
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_a26b53616204623200b92eaa90ad79ac);
+                    }
+                map_a26b53616204623200b92eaa90ad79ac.on('click', latLngPop);
+            
+</script>
+<script src="shuiyin.js"></script>
+    <script type="text/javascript">
+    var now = getNow();
+    watermark({"watermark_txt":"兰州大学离散算法团队"+now});
+    </script>

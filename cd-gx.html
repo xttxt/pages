@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f2c32b42d06aa392029773e4744b97a6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+                     <h3 align="center" style="font-size:16px"><b>成都市高新区近10日病例轨迹</b></h3>
+                     
+    
+            <div class="folium-map" id="map_f2c32b42d06aa392029773e4744b97a6" ></div>
+        
+</body>
+<script>    
+    
+            var map_f2c32b42d06aa392029773e4744b97a6 = L.map(
+                "map_f2c32b42d06aa392029773e4744b97a6",
+                {
+                    center: [30.58416827026185, 104.06758507161844],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7618e91afe4f6f7ce7a03aa75be2ff8b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f2c32b42d06aa392029773e4744b97a6);
+        
+    
+            var feature_group_53eef229c7af64d8a948bc19a7d25d60 = L.featureGroup(
+                {}
+            ).addTo(map_f2c32b42d06aa392029773e4744b97a6);
+        
+    
+            var poly_line_244bc6b77ee416ece83aac861bbb8cfd = L.polyline(
+                [[30.58416827026185, 104.06758507161844]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_53eef229c7af64d8a948bc19a7d25d60);
+        
+    
+            var poly_line_e0cc66001b99eb0762de775bd286e043 = L.polyline(
+                [[30.58416827026185, 104.06758507161844]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_53eef229c7af64d8a948bc19a7d25d60);
+        
+    
+            var marker_f834af0d5257e90a2a5c7eacb476f7a8 = L.marker(
+                [30.58416827026185, 104.06758507161844],
+                {}
+            ).addTo(feature_group_53eef229c7af64d8a948bc19a7d25d60);
+        
+    
+            var icon_5f1219b316ea04dd0e4b773a10a92a71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f834af0d5257e90a2a5c7eacb476f7a8.setIcon(icon_5f1219b316ea04dd0e4b773a10a92a71);
+        
+    
+        var popup_054fc591409b19ebe23e13f07f227968 = L.popup({"maxWidth": 3000});
+
+        
+            var html_08eaf92a0ef7b9db8557eb2e2dc9e8f3 = $(`<div id="html_08eaf92a0ef7b9db8557eb2e2dc9e8f3" style="width: 436.0px; height: 100.0%;">                                             7月22日8:55-18:00</br>                                             成都市高新区四川国馆酒业有限公司（益州大道北段777号中航·国际交流中心24楼）</br>                                             </div>`)[0];
+            popup_054fc591409b19ebe23e13f07f227968.setContent(html_08eaf92a0ef7b9db8557eb2e2dc9e8f3);
+        
+
+        marker_f834af0d5257e90a2a5c7eacb476f7a8.bindPopup(popup_054fc591409b19ebe23e13f07f227968)
+        ;
+
+        
+    
+    
+            var feature_group_d5ea77c97cfcdc4ac664fff4284efd39 = L.featureGroup(
+                {}
+            ).addTo(map_f2c32b42d06aa392029773e4744b97a6);
+        
+    
+            var poly_line_8733e8320d3f71dc15555875732b2cfc = L.polyline(
+                [[30.609568187445696, 104.0681651973168]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d5ea77c97cfcdc4ac664fff4284efd39);
+        
+    
+            var poly_line_f6a0a950166ec45343b5f89f4d67fb06 = L.polyline(
+                [[30.609568187445696, 104.0681651973168]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_d5ea77c97cfcdc4ac664fff4284efd39);
+        
+    
+            var marker_8836410ce2c39b8d36d275426dc01bf0 = L.marker(
+                [30.609568187445696, 104.0681651973168],
+                {}
+            ).addTo(feature_group_d5ea77c97cfcdc4ac664fff4284efd39);
+        
+    
+            var icon_d2cf8e237000c3e9b4bf0543c8b4ac1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_8836410ce2c39b8d36d275426dc01bf0.setIcon(icon_d2cf8e237000c3e9b4bf0543c8b4ac1a);
+        
+    
+        var popup_1fecb7265ed718cb70a42158e1266239 = L.popup({"maxWidth": 3000});
+
+        
+            var html_d989dd15545656396a36a36e8a95b8f0 = $(`<div id="html_d989dd15545656396a36a36e8a95b8f0" style="width: 172.0px; height: 100.0%;">                                             7月23日9:06-13:06</br>                                             成都市高新区盛和一路88号B座1608</br>                                             </div>`)[0];
+            popup_1fecb7265ed718cb70a42158e1266239.setContent(html_d989dd15545656396a36a36e8a95b8f0);
+        
+
+        marker_8836410ce2c39b8d36d275426dc01bf0.bindPopup(popup_1fecb7265ed718cb70a42158e1266239)
+        ;
+
+        
+    
+    
+            var feature_group_86585b9b236110837787b6fe7a5e3144 = L.featureGroup(
+                {}
+            ).addTo(map_f2c32b42d06aa392029773e4744b97a6);
+        
+    
+            var poly_line_79ecff18811c565f682b1fc2e31098c5 = L.polyline(
+                [[30.609568187445696, 104.0681651973168]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_86585b9b236110837787b6fe7a5e3144);
+        
+    
+            var poly_line_c4654da0f35b23439f9ba833440d0e57 = L.polyline(
+                [[30.609568187445696, 104.0681651973168]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_86585b9b236110837787b6fe7a5e3144);
+        
+    
+            var marker_a860944419a3b6e3a244f9285496c520 = L.marker(
+                [30.609568187445696, 104.0681651973168],
+                {}
+            ).addTo(feature_group_86585b9b236110837787b6fe7a5e3144);
+        
+    
+            var icon_a98a668726305b5afc4deb8086d0e575 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a860944419a3b6e3a244f9285496c520.setIcon(icon_a98a668726305b5afc4deb8086d0e575);
+        
+    
+        var popup_f60c9a4394fc1598ee5e5180994d706b = L.popup({"maxWidth": 3000});
+
+        
+            var html_72a32e919bb2a288ca9acb52342eb17c = $(`<div id="html_72a32e919bb2a288ca9acb52342eb17c" style="width: 172.0px; height: 100.0%;">                                             7月25日8:10-17:48</br>                                             成都市高新区盛和一路88号B座1608</br>                                             </div>`)[0];
+            popup_f60c9a4394fc1598ee5e5180994d706b.setContent(html_72a32e919bb2a288ca9acb52342eb17c);
+        
+
+        marker_a860944419a3b6e3a244f9285496c520.bindPopup(popup_f60c9a4394fc1598ee5e5180994d706b)
+        ;
+
+        
+    
+    
+            var layer_control_c4ae11e4c7a08809b4d8e6a12ad452e3 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_7618e91afe4f6f7ce7a03aa75be2ff8b,
+                },
+                overlays :  {
+                    "7\u670822\u65e5" : feature_group_53eef229c7af64d8a948bc19a7d25d60,
+                    "7\u670823\u65e5" : feature_group_d5ea77c97cfcdc4ac664fff4284efd39,
+                    "7\u670825\u65e5" : feature_group_86585b9b236110837787b6fe7a5e3144,
+                },
+            };
+            L.control.layers(
+                layer_control_c4ae11e4c7a08809b4d8e6a12ad452e3.base_layers,
+                layer_control_c4ae11e4c7a08809b4d8e6a12ad452e3.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_f2c32b42d06aa392029773e4744b97a6);
+        
+    
+                var lat_lng_popup_35cd534d72d74095c893be34080a1729 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_35cd534d72d74095c893be34080a1729
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_f2c32b42d06aa392029773e4744b97a6);
+                    }
+                map_f2c32b42d06aa392029773e4744b97a6.on('click', latLngPop);
+            
+</script>
+<script src="shuiyin.js"></script>
+    <script type="text/javascript">
+    var now = getNow();
+    watermark({"watermark_txt":"兰州大学离散算法团队"+now});
+    </script>
