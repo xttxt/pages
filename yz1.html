@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_5358dc08759959293cb1da16fb67fc54 {
+                #map_5a9d4c2ebf739b2ed16de5c4d22757c5 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -36,19 +36,19 @@
 <body>    
     
                      <h3 align="center" style="font-size:16px"><b>兰州市榆中县近14日需自主报备场所</b></h3>
-                     <a href="https://xttxt.github.io/pages/an1.html" target="_blank" title="病例轨迹">安宁区</a>
-                     <a href="https://xttxt.github.io/pages/qlh1.html" target="_blank" title="病例轨迹">七里河区</a>
                      <a href="https://xttxt.github.io/pages/cg1.html" target="_blank" title="病例轨迹">城关区</a>
+                     <a href="https://xttxt.github.io/pages/qlh1.html" target="_blank" title="病例轨迹">七里河区</a>
+                     <a href="https://xttxt.github.io/pages/an1.html" target="_blank" title="病例轨迹">安宁区</a>
     
-            <div class="folium-map" id="map_5358dc08759959293cb1da16fb67fc54" ></div>
+            <div class="folium-map" id="map_5a9d4c2ebf739b2ed16de5c4d22757c5" ></div>
         
 </body>
 <script>    
     
-            var map_5358dc08759959293cb1da16fb67fc54 = L.map(
-                "map_5358dc08759959293cb1da16fb67fc54",
+            var map_5a9d4c2ebf739b2ed16de5c4d22757c5 = L.map(
+                "map_5a9d4c2ebf739b2ed16de5c4d22757c5",
                 {
-                    center: [36.04060122996849, 103.97111981578506],
+                    center: [36.0384015080567, 103.96450397536518],
                     crs: L.CRS.EPSG3857,
                     zoom: 15,
                     zoomControl: true,
@@ -60,282 +60,214 @@
 
         
     
-            var tile_layer_87005fd60f547bcc800903d7e43937ed = L.tileLayer(
+            var tile_layer_0655070a569925006e7d682f12e062e9 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_5358dc08759959293cb1da16fb67fc54);
+            ).addTo(map_5a9d4c2ebf739b2ed16de5c4d22757c5);
         
     
-            var feature_group_8d42099263c2f9f565783da2718167fb = L.featureGroup(
+            var feature_group_2bb83df7ca450fddec04ee701cadb0df = L.featureGroup(
                 {}
-            ).addTo(map_5358dc08759959293cb1da16fb67fc54);
+            ).addTo(map_5a9d4c2ebf739b2ed16de5c4d22757c5);
         
     
-            var poly_line_a31549b1740869f177dab3026af3b97d = L.polyline(
-                [[36.04060122996849, 103.97111981578506], [36.040989014909016, 103.95902835412907]],
+            var poly_line_f4f7453c40c5c9371c0d744f98c6f09d = L.polyline(
+                [[36.0384015080567, 103.96450397536518], [36.040989014909016, 103.95902835412907]],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(feature_group_8d42099263c2f9f565783da2718167fb);
+            ).addTo(feature_group_2bb83df7ca450fddec04ee701cadb0df);
         
     
-            var poly_line_264a0f741378ea104e50e8798e42a90d = L.polyline(
-                [[36.04060122996849, 103.97111981578506], [36.040989014909016, 103.95902835412907]],
+            var poly_line_8955b6f872147dd9ac8205133a0f2aa0 = L.polyline(
+                [[36.0384015080567, 103.96450397536518], [36.040989014909016, 103.95902835412907]],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 2}
-            ).addTo(feature_group_8d42099263c2f9f565783da2718167fb);
+            ).addTo(feature_group_2bb83df7ca450fddec04ee701cadb0df);
         
     
-            var marker_20a09e248f1b79c2fd590a3fee01e128 = L.marker(
-                [36.04060122996849, 103.97111981578506],
-                {}
-            ).addTo(feature_group_8d42099263c2f9f565783da2718167fb);
-        
-    
-            var icon_51a3fcc10e2ecceb12e2851e1ec9a916 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
-            );
-            marker_20a09e248f1b79c2fd590a3fee01e128.setIcon(icon_51a3fcc10e2ecceb12e2851e1ec9a916);
-        
-    
-        var popup_4aeb6adfb85db01a9c8849713af7980c = L.popup({"maxWidth": 3000});
-
-        
-            var html_6f904c82559b5573dda2b1a8601c4975 = $(`<div id="html_6f904c82559b5573dda2b1a8601c4975" style="width: 180.0px; height: 100.0%;">                                             17:30分到过</br>                                             兰州市榆中县和平镇方家泉村广场</br>                                             </div>`)[0];
-            popup_4aeb6adfb85db01a9c8849713af7980c.setContent(html_6f904c82559b5573dda2b1a8601c4975);
-        
-
-        marker_20a09e248f1b79c2fd590a3fee01e128.bindPopup(popup_4aeb6adfb85db01a9c8849713af7980c)
-        ;
-
-        
-    
-    
-            var marker_bcbdc3b6a48a77e3daee53d14d1ede02 = L.marker(
-                [36.040989014909016, 103.95902835412907],
-                {}
-            ).addTo(feature_group_8d42099263c2f9f565783da2718167fb);
-        
-    
-            var icon_024c98f0e1b3bfc98f57178662a2d9de = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
-            );
-            marker_bcbdc3b6a48a77e3daee53d14d1ede02.setIcon(icon_024c98f0e1b3bfc98f57178662a2d9de);
-        
-    
-        var popup_b1d1a97d509d7a744a77bc11d53976f3 = L.popup({"maxWidth": 3000});
-
-        
-            var html_8091f4debea99b391aceedf7b8b02286 = $(`<div id="html_8091f4debea99b391aceedf7b8b02286" style="width: 264.0px; height: 100.0%;">                                             21:00左右到过</br>                                             兰州市榆中县恒大山水城2期14号楼及楼下百货商店</br>                                             </div>`)[0];
-            popup_b1d1a97d509d7a744a77bc11d53976f3.setContent(html_8091f4debea99b391aceedf7b8b02286);
-        
-
-        marker_bcbdc3b6a48a77e3daee53d14d1ede02.bindPopup(popup_b1d1a97d509d7a744a77bc11d53976f3)
-        ;
-
-        
-    
-    
-            var feature_group_9392ff3f531024f76fc0dc3fd3035c65 = L.featureGroup(
-                {}
-            ).addTo(map_5358dc08759959293cb1da16fb67fc54);
-        
-    
-            var poly_line_960c08b42057ab1630491e44f61ba464 = L.polyline(
-                [[36.0384015080567, 103.96450397536518], [36.040989014909016, 103.95902835412907]],
-                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(feature_group_9392ff3f531024f76fc0dc3fd3035c65);
-        
-    
-            var poly_line_e1e786fa5666874171c08ce88b1804b2 = L.polyline(
-                [[36.0384015080567, 103.96450397536518], [36.040989014909016, 103.95902835412907]],
-                {"bubblingMouseEvents": true, "color": "black", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 2}
-            ).addTo(feature_group_9392ff3f531024f76fc0dc3fd3035c65);
-        
-    
-            var marker_b6e5b21f940383cf795a7b207c56c987 = L.marker(
+            var marker_8606b1cde04a1ab127b2f64e90d7eb6e = L.marker(
                 [36.0384015080567, 103.96450397536518],
                 {}
-            ).addTo(feature_group_9392ff3f531024f76fc0dc3fd3035c65);
+            ).addTo(feature_group_2bb83df7ca450fddec04ee701cadb0df);
         
     
-            var icon_cca2a5b0e443f62a879f95f9a328d462 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            var icon_99d39565187d9c2a139effd19f62109e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
             );
-            marker_b6e5b21f940383cf795a7b207c56c987.setIcon(icon_cca2a5b0e443f62a879f95f9a328d462);
+            marker_8606b1cde04a1ab127b2f64e90d7eb6e.setIcon(icon_99d39565187d9c2a139effd19f62109e);
         
     
-        var popup_d0fe0076071bafa8370302c4d6a1af37 = L.popup({"maxWidth": 3000});
+        var popup_2b5ba8dbc0ec3349264ce24021d24fe6 = L.popup({"maxWidth": 3000});
 
         
-            var html_ee4e49bb294225a3719f20feaaab594a = $(`<div id="html_ee4e49bb294225a3719f20feaaab594a" style="width: 396.0px; height: 100.0%;">                                             16:50到过</br>                                             兰州市榆中县和平镇方家泉村广场、兰州市榆中县蔚然锦和超市门口蔬菜摊</br>                                             </div>`)[0];
-            popup_d0fe0076071bafa8370302c4d6a1af37.setContent(html_ee4e49bb294225a3719f20feaaab594a);
+            var html_7bb78308e47fa7a58c39f3f0366ded5e = $(`<div id="html_7bb78308e47fa7a58c39f3f0366ded5e" style="width: 396.0px; height: 100.0%;">                                             16:50到过</br>                                             兰州市榆中县和平镇方家泉村广场、兰州市榆中县蔚然锦和超市门口蔬菜摊</br>                                             </div>`)[0];
+            popup_2b5ba8dbc0ec3349264ce24021d24fe6.setContent(html_7bb78308e47fa7a58c39f3f0366ded5e);
         
 
-        marker_b6e5b21f940383cf795a7b207c56c987.bindPopup(popup_d0fe0076071bafa8370302c4d6a1af37)
+        marker_8606b1cde04a1ab127b2f64e90d7eb6e.bindPopup(popup_2b5ba8dbc0ec3349264ce24021d24fe6)
         ;
 
         
     
     
-            var marker_f5f0af886fc17850b551ca10568f9144 = L.marker(
+            var marker_d46fdafe0ac53d4b53b5c37e3707da2e = L.marker(
                 [36.040989014909016, 103.95902835412907],
                 {}
-            ).addTo(feature_group_9392ff3f531024f76fc0dc3fd3035c65);
+            ).addTo(feature_group_2bb83df7ca450fddec04ee701cadb0df);
         
     
-            var icon_a2ca4c0b7eb65b778d94a7c0aa584302 = L.AwesomeMarkers.icon(
+            var icon_ab83bbb96d778cd07fe2df784d1c5a5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d46fdafe0ac53d4b53b5c37e3707da2e.setIcon(icon_ab83bbb96d778cd07fe2df784d1c5a5f);
+        
+    
+        var popup_56673eb48330989f6f96dca448303c82 = L.popup({"maxWidth": 3000});
+
+        
+            var html_52095d645ba07e9673a90553eb169b9c = $(`<div id="html_52095d645ba07e9673a90553eb169b9c" style="width: 468.0px; height: 100.0%;">                                             21:00到过</br>                                             兰州市榆中县和平镇方家泉工业园区、兰州市榆中县恒大山水城2期14号楼及楼下百货商店</br>                                             </div>`)[0];
+            popup_56673eb48330989f6f96dca448303c82.setContent(html_52095d645ba07e9673a90553eb169b9c);
+        
+
+        marker_d46fdafe0ac53d4b53b5c37e3707da2e.bindPopup(popup_56673eb48330989f6f96dca448303c82)
+        ;
+
+        
+    
+    
+            var feature_group_afbfc3e670864bb1bebf8cb49701aae4 = L.featureGroup(
+                {}
+            ).addTo(map_5a9d4c2ebf739b2ed16de5c4d22757c5);
+        
+    
+            var poly_line_f5cc2f9b2aa876df4a5b4c1c25e0faed = L.polyline(
+                [[35.97569473430525, 104.0219054279611], [36.04060122996849, 103.97111981578506]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_afbfc3e670864bb1bebf8cb49701aae4);
+        
+    
+            var poly_line_8ce5bf7a6b7ec7ca353f86dd01893a6d = L.polyline(
+                [[35.97569473430525, 104.0219054279611], [36.04060122996849, 103.97111981578506]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_afbfc3e670864bb1bebf8cb49701aae4);
+        
+    
+            var marker_bf0b18878d781e34589a29c8010962ed = L.marker(
+                [35.97569473430525, 104.0219054279611],
+                {}
+            ).addTo(feature_group_afbfc3e670864bb1bebf8cb49701aae4);
+        
+    
+            var icon_23a0fb4db74b9aa5797b1bedb5e9c755 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
             );
-            marker_f5f0af886fc17850b551ca10568f9144.setIcon(icon_a2ca4c0b7eb65b778d94a7c0aa584302);
+            marker_bf0b18878d781e34589a29c8010962ed.setIcon(icon_23a0fb4db74b9aa5797b1bedb5e9c755);
         
     
-        var popup_d09dcbebf09242a3950fe157bc70abc7 = L.popup({"maxWidth": 3000});
+        var popup_d79e01246805c6d4dd7ebad3a5edb835 = L.popup({"maxWidth": 3000});
 
         
-            var html_506ca11192e2204db1fd945a9f87dea9 = $(`<div id="html_506ca11192e2204db1fd945a9f87dea9" style="width: 468.0px; height: 100.0%;">                                             21:00到过</br>                                             兰州市榆中县和平镇方家泉工业园区、兰州市榆中县恒大山水城2期14号楼及楼下百货商店</br>                                             </div>`)[0];
-            popup_d09dcbebf09242a3950fe157bc70abc7.setContent(html_506ca11192e2204db1fd945a9f87dea9);
+            var html_eaf844c14f802a632cb94d9cbab2184b = $(`<div id="html_eaf844c14f802a632cb94d9cbab2184b" style="width: 252.0px; height: 100.0%;">                                             08:00左右到过</br>                                             兰州市榆中县兰州国际高原夏菜副食品采购中心</br>                                             </div>`)[0];
+            popup_d79e01246805c6d4dd7ebad3a5edb835.setContent(html_eaf844c14f802a632cb94d9cbab2184b);
         
 
-        marker_f5f0af886fc17850b551ca10568f9144.bindPopup(popup_d09dcbebf09242a3950fe157bc70abc7)
+        marker_bf0b18878d781e34589a29c8010962ed.bindPopup(popup_d79e01246805c6d4dd7ebad3a5edb835)
         ;
 
         
     
     
-            var feature_group_71ab351155bc7c9de5a45eb6f7b63100 = L.featureGroup(
-                {}
-            ).addTo(map_5358dc08759959293cb1da16fb67fc54);
-        
-    
-            var poly_line_952102e503034ef79e3411591cf59b62 = L.polyline(
-                [[35.97569473430525, 104.0219054279611], [36.04060122996849, 103.97111981578506]],
-                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(feature_group_71ab351155bc7c9de5a45eb6f7b63100);
-        
-    
-            var poly_line_ee4d7ac9591d8f97660fbea345b9cb07 = L.polyline(
-                [[35.97569473430525, 104.0219054279611], [36.04060122996849, 103.97111981578506]],
-                {"bubblingMouseEvents": true, "color": "green", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 2}
-            ).addTo(feature_group_71ab351155bc7c9de5a45eb6f7b63100);
-        
-    
-            var marker_30ddf1ffc16a1346eeb1939b6031f4bc = L.marker(
-                [35.97569473430525, 104.0219054279611],
-                {}
-            ).addTo(feature_group_71ab351155bc7c9de5a45eb6f7b63100);
-        
-    
-            var icon_d63cb5385b2e456d2e1dcacd824530d1 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
-            );
-            marker_30ddf1ffc16a1346eeb1939b6031f4bc.setIcon(icon_d63cb5385b2e456d2e1dcacd824530d1);
-        
-    
-        var popup_c3902daa3a851745a1de463c0031f73f = L.popup({"maxWidth": 3000});
-
-        
-            var html_169546403b15e539a4b92904e9f30ab6 = $(`<div id="html_169546403b15e539a4b92904e9f30ab6" style="width: 252.0px; height: 100.0%;">                                             08:00左右到过</br>                                             兰州市榆中县兰州国际高原夏菜副食品采购中心</br>                                             </div>`)[0];
-            popup_c3902daa3a851745a1de463c0031f73f.setContent(html_169546403b15e539a4b92904e9f30ab6);
-        
-
-        marker_30ddf1ffc16a1346eeb1939b6031f4bc.bindPopup(popup_c3902daa3a851745a1de463c0031f73f)
-        ;
-
-        
-    
-    
-            var marker_e1d682a7dbf1abfe0228c55f7663ccd2 = L.marker(
+            var marker_34c8ad9c5a31cf7206b60ec0f88b34e3 = L.marker(
                 [36.04060122996849, 103.97111981578506],
                 {}
-            ).addTo(feature_group_71ab351155bc7c9de5a45eb6f7b63100);
+            ).addTo(feature_group_afbfc3e670864bb1bebf8cb49701aae4);
         
     
-            var icon_14dbdb9d198680413698594808eb88f1 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            var icon_f03c015c90e972ea66bd4997f81266fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
             );
-            marker_e1d682a7dbf1abfe0228c55f7663ccd2.setIcon(icon_14dbdb9d198680413698594808eb88f1);
+            marker_34c8ad9c5a31cf7206b60ec0f88b34e3.setIcon(icon_f03c015c90e972ea66bd4997f81266fd);
         
     
-        var popup_bf032ae1a61fe3a17c086601a132f06f = L.popup({"maxWidth": 3000});
+        var popup_21ec8d414853d303446ece418789946b = L.popup({"maxWidth": 3000});
 
         
-            var html_584e7ec657d789438eefc3c97f50682f = $(`<div id="html_584e7ec657d789438eefc3c97f50682f" style="width: 180.0px; height: 100.0%;">                                             16:30到过</br>                                             兰州市榆中县和平镇方家泉村广场</br>                                             </div>`)[0];
-            popup_bf032ae1a61fe3a17c086601a132f06f.setContent(html_584e7ec657d789438eefc3c97f50682f);
+            var html_33b16a5f2ed3587b45ba5c795aad67a9 = $(`<div id="html_33b16a5f2ed3587b45ba5c795aad67a9" style="width: 180.0px; height: 100.0%;">                                             16:30到过</br>                                             兰州市榆中县和平镇方家泉村广场</br>                                             </div>`)[0];
+            popup_21ec8d414853d303446ece418789946b.setContent(html_33b16a5f2ed3587b45ba5c795aad67a9);
         
 
-        marker_e1d682a7dbf1abfe0228c55f7663ccd2.bindPopup(popup_bf032ae1a61fe3a17c086601a132f06f)
+        marker_34c8ad9c5a31cf7206b60ec0f88b34e3.bindPopup(popup_21ec8d414853d303446ece418789946b)
         ;
 
         
     
     
-            var feature_group_ecfa9e2c1453cc26f232d63e5a9ce8a8 = L.featureGroup(
+            var feature_group_95a9dea2d93caf12d8e030710ef27c83 = L.featureGroup(
                 {}
-            ).addTo(map_5358dc08759959293cb1da16fb67fc54);
+            ).addTo(map_5a9d4c2ebf739b2ed16de5c4d22757c5);
         
     
-            var poly_line_dfc27bfb5bc3595166a44da4479a683e = L.polyline(
+            var poly_line_13eb04d03d24683fd0217cfd2761de86 = L.polyline(
                 [[35.97569473430525, 104.0219054279611]],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(feature_group_ecfa9e2c1453cc26f232d63e5a9ce8a8);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_95a9dea2d93caf12d8e030710ef27c83);
         
     
-            var poly_line_e579ffdb64669988d480358586a3c554 = L.polyline(
+            var poly_line_cc019006ce3542f24374586cae3fcc66 = L.polyline(
                 [[35.97569473430525, 104.0219054279611]],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 2}
-            ).addTo(feature_group_ecfa9e2c1453cc26f232d63e5a9ce8a8);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.3, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_95a9dea2d93caf12d8e030710ef27c83);
         
     
-            var marker_0445ec670ed248c01381764765a8fe75 = L.marker(
+            var marker_5eec7326227ed253b6e31de638c04d29 = L.marker(
                 [35.97569473430525, 104.0219054279611],
                 {}
-            ).addTo(feature_group_ecfa9e2c1453cc26f232d63e5a9ce8a8);
+            ).addTo(feature_group_95a9dea2d93caf12d8e030710ef27c83);
         
     
-            var icon_b65f2dd6008916253c977381de003e44 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            var icon_417379a4acbd0ff58e0413371d822f3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "chevron-circle-down", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
             );
-            marker_0445ec670ed248c01381764765a8fe75.setIcon(icon_b65f2dd6008916253c977381de003e44);
+            marker_5eec7326227ed253b6e31de638c04d29.setIcon(icon_417379a4acbd0ff58e0413371d822f3f);
         
     
-        var popup_6cf4a29575b7a97a558d9fb1d38d9f7c = L.popup({"maxWidth": 3000});
+        var popup_1e7eec59ad947dde83e09c7d215ef218 = L.popup({"maxWidth": 3000});
 
         
-            var html_0145a540260a2d1b13773e032c6a7d95 = $(`<div id="html_0145a540260a2d1b13773e032c6a7d95" style="width: 228.0px; height: 100.0%;">                                             09:27左右到过</br>                                             兰州市榆中县国际高原夏菜副食品采购中心</br>                                             </div>`)[0];
-            popup_6cf4a29575b7a97a558d9fb1d38d9f7c.setContent(html_0145a540260a2d1b13773e032c6a7d95);
+            var html_b3f20c1328fb76010fa2cee283e81455 = $(`<div id="html_b3f20c1328fb76010fa2cee283e81455" style="width: 228.0px; height: 100.0%;">                                             09:27左右到过</br>                                             兰州市榆中县国际高原夏菜副食品采购中心</br>                                             </div>`)[0];
+            popup_1e7eec59ad947dde83e09c7d215ef218.setContent(html_b3f20c1328fb76010fa2cee283e81455);
         
 
-        marker_0445ec670ed248c01381764765a8fe75.bindPopup(popup_6cf4a29575b7a97a558d9fb1d38d9f7c)
+        marker_5eec7326227ed253b6e31de638c04d29.bindPopup(popup_1e7eec59ad947dde83e09c7d215ef218)
         ;
 
         
     
     
-            var layer_control_af29b3af79883be757fb4a62eaac3481 = {
+            var layer_control_e5cdbd4f920098566a2301cbea658e4e = {
                 base_layers : {
-                    "openstreetmap" : tile_layer_87005fd60f547bcc800903d7e43937ed,
+                    "openstreetmap" : tile_layer_0655070a569925006e7d682f12e062e9,
                 },
                 overlays :  {
-                    "7\u670819\u65e5" : feature_group_8d42099263c2f9f565783da2718167fb,
-                    "7\u670820\u65e5" : feature_group_9392ff3f531024f76fc0dc3fd3035c65,
-                    "7\u670821\u65e5" : feature_group_71ab351155bc7c9de5a45eb6f7b63100,
-                    "7\u670822\u65e5" : feature_group_ecfa9e2c1453cc26f232d63e5a9ce8a8,
+                    "7\u670820\u65e5" : feature_group_2bb83df7ca450fddec04ee701cadb0df,
+                    "7\u670821\u65e5" : feature_group_afbfc3e670864bb1bebf8cb49701aae4,
+                    "7\u670822\u65e5" : feature_group_95a9dea2d93caf12d8e030710ef27c83,
                 },
             };
             L.control.layers(
-                layer_control_af29b3af79883be757fb4a62eaac3481.base_layers,
-                layer_control_af29b3af79883be757fb4a62eaac3481.overlays,
+                layer_control_e5cdbd4f920098566a2301cbea658e4e.base_layers,
+                layer_control_e5cdbd4f920098566a2301cbea658e4e.overlays,
                 {"autoZIndex": true, "collapsed": true, "position": "topright"}
-            ).addTo(map_5358dc08759959293cb1da16fb67fc54);
+            ).addTo(map_5a9d4c2ebf739b2ed16de5c4d22757c5);
         
     
-                var lat_lng_popup_5292b7df2185e2515af23eb18ed8bcda = L.popup();
+                var lat_lng_popup_2755e56e389ec44e0a35a5389c1ad625 = L.popup();
                 function latLngPop(e) {
-                    lat_lng_popup_5292b7df2185e2515af23eb18ed8bcda
+                    lat_lng_popup_2755e56e389ec44e0a35a5389c1ad625
                         .setLatLng(e.latlng)
                         .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
                                     "<br>Longitude: " + e.latlng.lng.toFixed(4))
-                        .openOn(map_5358dc08759959293cb1da16fb67fc54);
+                        .openOn(map_5a9d4c2ebf739b2ed16de5c4d22757c5);
                     }
-                map_5358dc08759959293cb1da16fb67fc54.on('click', latLngPop);
+                map_5a9d4c2ebf739b2ed16de5c4d22757c5.on('click', latLngPop);
             
 </script>
 <script src="shuiyin.js"></script>
